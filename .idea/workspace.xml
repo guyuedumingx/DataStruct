@@ -1,18 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9ff1a76e-45ee-4286-9a64-9a5afdab3eb6" name="Default Changelist" comment="" />
+    <list default="true" id="2bd986bd-54fe-4c9e-b941-255f32c46be3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DataStruct.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructe.iml" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -23,7 +26,7 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectId" id="1hJqITdfifLPLSSpfG0Qmskbahu" />
+  <component name="ProjectId" id="1hKA1qLpFLznO1uIij9nuiEq67W" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -31,54 +34,15 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
-  <component name="RunManager" selected="Application.Fabonacci">
+  <component name="RunManager">
     <configuration name="BubbleSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Week_1.BubbleSort" />
-      <module name="DataStructe" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Week_1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ChickAndHen" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Week_1.ChickAndHen" />
-      <module name="DataStructe" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Week_1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Fabonacci" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Week_1.Fabonacci" />
-      <module name="DataStructe" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Week_1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Factorial" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Week_1.Factorial" />
-      <module name="DataStructe" />
+      <module name="DataStruct" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Week_1.*" />
@@ -91,10 +55,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Fabonacci" />
-        <item itemvalue="Application.Factorial" />
         <item itemvalue="Application.BubbleSort" />
-        <item itemvalue="Application.ChickAndHen" />
       </list>
     </recent_temporary>
   </component>
@@ -103,12 +64,12 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="9ff1a76e-45ee-4286-9a64-9a5afdab3eb6" name="Default Changelist" comment="" />
-      <created>1599739462624</created>
+      <changelist id="2bd986bd-54fe-4c9e-b941-255f32c46be3" name="Default Changelist" comment="" />
+      <created>1599749197997</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1599739462624</updated>
-      <workItem from="1599739466087" duration="8382000" />
+      <updated>1599749197997</updated>
+      <workItem from="1599749201641" duration="104000" />
     </task>
     <servers />
   </component>
@@ -116,45 +77,21 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="555" y="215" width="800" height="684" key="#Vim_Emulation" timestamp="1599743651276">
+    <state width="1878" height="277" key="GridCell.Tab.0.bottom" timestamp="1599749304968">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="555" y="215" width="800" height="684" key="#Vim_Emulation/0.27.1920.1053@0.27.1920.1053" timestamp="1599743651276" />
-    <state width="1878" height="2" key="GridCell.Tab.0.bottom" timestamp="1599748005932">
+    <state width="1878" height="277" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1599749304968" />
+    <state width="1878" height="277" key="GridCell.Tab.0.center" timestamp="1599749304968">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1878" height="2" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1599748005932" />
-    <state width="1878" height="2" key="GridCell.Tab.0.center" timestamp="1599748005931">
+    <state width="1878" height="277" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1599749304968" />
+    <state width="1878" height="277" key="GridCell.Tab.0.left" timestamp="1599749304967">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1878" height="2" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1599748005931" />
-    <state width="1878" height="2" key="GridCell.Tab.0.left" timestamp="1599748005930">
+    <state width="1878" height="277" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1599749304967" />
+    <state width="1878" height="277" key="GridCell.Tab.0.right" timestamp="1599749304968">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1878" height="2" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1599748005930" />
-    <state width="1878" height="2" key="GridCell.Tab.0.right" timestamp="1599748005932">
-      <screen x="0" y="27" width="1920" height="1053" />
-    </state>
-    <state width="1878" height="2" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1599748005932" />
-    <state width="1878" height="2" key="GridCell.Tab.1.bottom" timestamp="1599748005938">
-      <screen x="0" y="27" width="1920" height="1053" />
-    </state>
-    <state width="1878" height="2" key="GridCell.Tab.1.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1599748005938" />
-    <state width="1878" height="2" key="GridCell.Tab.1.center" timestamp="1599748005935">
-      <screen x="0" y="27" width="1920" height="1053" />
-    </state>
-    <state width="1878" height="2" key="GridCell.Tab.1.center/0.27.1920.1053@0.27.1920.1053" timestamp="1599748005935" />
-    <state width="1878" height="2" key="GridCell.Tab.1.left" timestamp="1599748005934">
-      <screen x="0" y="27" width="1920" height="1053" />
-    </state>
-    <state width="1878" height="2" key="GridCell.Tab.1.left/0.27.1920.1053@0.27.1920.1053" timestamp="1599748005934" />
-    <state width="1878" height="2" key="GridCell.Tab.1.right" timestamp="1599748005937">
-      <screen x="0" y="27" width="1920" height="1053" />
-    </state>
-    <state width="1878" height="2" key="GridCell.Tab.1.right/0.27.1920.1053@0.27.1920.1053" timestamp="1599748005937" />
-    <state x="623" y="259" width="672" height="678" key="search.everywhere.popup" timestamp="1599743597385">
-      <screen x="0" y="27" width="1920" height="1053" />
-    </state>
-    <state x="623" y="259" width="672" height="678" key="search.everywhere.popup/0.27.1920.1053@0.27.1920.1053" timestamp="1599743597385" />
+    <state width="1878" height="277" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1599749304968" />
   </component>
 </project>
