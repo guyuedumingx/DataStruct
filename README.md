@@ -1,9 +1,12 @@
 ## DataStruct
 
 ### Week_1  
-[**斐波那契数列**](src/main/java/week_1/Fabonacci.java)  
+[**斐波那契数列**](src/main/java/week_1/Fabonacci.java)    
+![斐波那契数列运行过程](res/image/Fabonacci.gif)  
 
 [**递归**](src/main/java/week_1/Factorial.java)  
+
+![递归运行过程](res/image/Factorial.gif)  
 
 [**百钱百鸡问题**](src/main/java/week_1/ChickAndHen.java)  
 ![百钱百鸡函数拟合](res/image/HensAndCock.png)  
