@@ -1,6 +1,10 @@
-package Week_1;
+package main.Week_1;
 
+import java.io.File;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Path;
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class BubbleSort {
     public static void main(String[] args) {
@@ -12,7 +16,6 @@ public class BubbleSort {
         prtArr(arr1);
         prtTime(time1);
         System.out.println("-------- Quick  Sort --------");
-        prtArr(arr2);
         prtTime(time2);
     }
 
@@ -36,6 +39,11 @@ public class BubbleSort {
        Arrays.sort(arr);
        long end = System.nanoTime();
        return end - start;
+    }
+
+    public static File readFile() {
+        Scanner in = new Scanner(Path.of("datafile.txt"), StandardCharsets.UTF_8);
+
     }
 
     public static void prtArr(int[] arr) {
