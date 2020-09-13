@@ -18,16 +18,16 @@ public class ChickAndHen {
     static float chick_pride = 1/3;
 
     public static void main(String[] args) {
-//        int[] x = setArr();
-//        double[] y = new double[100];
-//        for (int i=0; i<x.length;i++) {
-//            long res = calculate(x[i]);
-//            y[i] = res*Math.pow(10,-6);
-//        }
-//        prt(x);
-//        prt(y);
-        long calculate = calculate(1000);
-        prt(calculate);
+        int[] x = setArr();
+        double[] y = new double[100];
+        for (int i=0; i<x.length;i++) {
+            long res = calculate(x[i]);
+            y[i] = res;
+        }
+        prt(x);
+        prt(y);
+//        long calculate = calculate(4000);
+//        prt(calculate);
     }
 
     /**
@@ -39,7 +39,7 @@ public class ChickAndHen {
         int[] arr = new int[number];
         for (int i=0; i<number; i++) {
             arr[i] = first;
-            first += 100;
+            first += number;
         }
         return arr;
     }
@@ -64,8 +64,8 @@ public class ChickAndHen {
                 //小鸡数
                 int chick_number = sum - cock_number - hem_number;
                 //小鸡数量必须是3的倍数,各种鸡的数量和价格乘积为钱数
-                if(chick_number%3==0 && (cock_number*cock_pride+hem_number* hen_pride +
-                chick_number*chick_pride)==sum){}
+                if(chick_number%3==0 && ((cock_number*cock_pride+hem_number* hen_pride +
+                chick_number*chick_pride)==sum)){}
             }
         }
         long end = System.nanoTime();
@@ -89,7 +89,7 @@ public class ChickAndHen {
      */
     public static void prt(double[] arr) {
         for (double i: arr) {
-            System.out.print(i+",");
+            System.out.print(i*Math.pow(10,-6)+",");
         }
         System.out.println();
     }
