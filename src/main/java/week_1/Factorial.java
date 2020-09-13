@@ -1,4 +1,4 @@
-package main.Week_1;
+package week_1;
 
 public class Factorial {
     public static void main(String[] args) {
@@ -7,7 +7,7 @@ public class Factorial {
 
 
         long factorialTimeStart = System.nanoTime();
-        long res =  f.factorial(number);
+        f.factorial(number);
         long factorialTimeEnd = System.nanoTime();
         System.out.println("----Factoral----");
         f.prtTime(factorialTimeEnd-factorialTimeStart);
@@ -17,17 +17,20 @@ public class Factorial {
     }
 
     public long factorial(int n) {
-        if (n == 1)
+        if (n == 1) {
             return 1;
-        else
-            return n * factorial(n-1);
+        }
+        else {
+            return n * factorial(n - 1);
+        }
     }
 
     public void unfactorial(int n) {
         long sum = 1;
         long start = System.nanoTime();
-        for(long i=1; i<=n; i++)
-           sum *= i;
+        for(long i=1; i<=n; i++) {
+            sum *= i;
+        }
         long end = System.nanoTime();
         System.out.println("----UnFactoral----");
         prtTime(end - start);

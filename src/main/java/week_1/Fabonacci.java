@@ -1,4 +1,4 @@
-package main.Week_1;
+package week_1;
 
 public class Fabonacci {
     public static void main(String[] args) {

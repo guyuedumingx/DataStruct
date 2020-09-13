@@ -1,5 +1,4 @@
-package main.Week_1;
-
+package week_1;
 
 public class ChickAndHen {
     static int cock_pride = 5;
