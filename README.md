@@ -86,4 +86,8 @@ guyuedumingx
 ### Web  
 
 [十大经典排序动图](https://www.cnblogs.com/onepixel/articles/7674659.html)  
+[程序运行过程查看](http://www.pythontutor.com/java.html#mode=edit)  
 
+### Tool  
+
+[Gif制作工具](https://github.com/NickeManarin/ScreenToGif/releases)  
