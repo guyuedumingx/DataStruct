@@ -10,9 +10,9 @@ package week_1;
  * @author wangwei
  */
 public class ChickAndHen {
-    //公鸡钱数
+    //公鸡单钱数
     static int cock_pride = 5;
-    //母鸡钱数
+    //母鸡单钱数
     static int hen_pride = 3;
     //小鸡单只钱数
     static float chick_pride = 1/3;

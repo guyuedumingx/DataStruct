@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="08caa06f-fd43-46db-9758-420d57b9208d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/leetcode/editor.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/Reverse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/week_1/ChickAndHen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/week_1/ChickAndHen.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -55,7 +56,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ChickAndHen (1)">
+  <component name="RunManager" selected="Application.Reverse">
     <configuration name="BubbleSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="week_1.BubbleSort" />
       <module name="DataStruct" />
@@ -82,12 +83,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Factorial" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="week_1.Factorial" />
+    <configuration name="Reverse" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.Reverse" />
       <module name="DataStruct" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="week_1.*" />
+          <option name="PATTERN" value="leetcode.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -116,11 +117,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Reverse" />
         <item itemvalue="Application.ChickAndHen (1)" />
         <item itemvalue="Application.BubbleSort" />
         <item itemvalue="JUnit.week1Test.FileTest" />
         <item itemvalue="JUnit.week1Test" />
-        <item itemvalue="Application.Factorial" />
       </list>
     </recent_temporary>
   </component>
@@ -134,7 +135,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1599966501708</updated>
-      <workItem from="1599966504413" duration="8486000" />
+      <workItem from="1599966504413" duration="9274000" />
+      <workItem from="1599998081724" duration="2366000" />
     </task>
     <servers />
   </component>
@@ -154,22 +156,22 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="493" height="700" key="DebuggerActiveHint/0.0.1920.1080@0.0.1920.1080" timestamp="1599968283505" />
-    <state width="1850" height="322" key="GridCell.Tab.0.bottom" timestamp="1599984847553">
+    <state width="1850" height="3" key="GridCell.Tab.0.bottom" timestamp="1600000588889">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1850" height="322" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1599984847553" />
-    <state width="1850" height="322" key="GridCell.Tab.0.center" timestamp="1599984847551">
+    <state width="1850" height="3" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1600000588889" />
+    <state width="1850" height="3" key="GridCell.Tab.0.center" timestamp="1600000588887">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1850" height="322" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1599984847551" />
-    <state width="1850" height="322" key="GridCell.Tab.0.left" timestamp="1599984847550">
+    <state width="1850" height="3" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1600000588887" />
+    <state width="1850" height="3" key="GridCell.Tab.0.left" timestamp="1600000588886">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1850" height="322" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1599984847550" />
-    <state width="1850" height="322" key="GridCell.Tab.0.right" timestamp="1599984847552">
+    <state width="1850" height="3" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1600000588886" />
+    <state width="1850" height="3" key="GridCell.Tab.0.right" timestamp="1600000588888">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1850" height="322" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1599984847552" />
+    <state width="1850" height="3" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1600000588888" />
     <state width="1850" height="322" key="GridCell.Tab.1.bottom" timestamp="1599984844211">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -190,20 +192,9 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="958" height="520" key="XDebugger.FullValuePopup/0.0.1920.1080@0.0.1920.1080" timestamp="1599968196007" />
-    <state x="654" y="11" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1599984561272">
+    <state x="654" y="11" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1600000285486">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="654" y="11" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1599984561272" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/week_1/ChickAndHen.java</url>
-          <line>91</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <state x="654" y="11" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1600000285486" />
   </component>
 </project>
