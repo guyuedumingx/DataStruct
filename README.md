@@ -89,6 +89,12 @@ for(int i=0; i<=arr.length; i++) {
 
 guyuedumingx  
 
+### 公开  
+
+欢迎大家提出issus或者给我发微信纠正  
+欢迎大家把自己的代码pull resquests  
+或者微信给我代码  
+
 ### Web  
 
 [十大经典排序动图](https://www.cnblogs.com/onepixel/articles/7674659.html)  
