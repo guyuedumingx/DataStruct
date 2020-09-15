@@ -1,11 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f3fd28a0-ddff-4341-843b-f5e39f56835c" name="Default Changelist" comment="" />
+    <list default="true" id="f3fd28a0-ddff-4341-843b-f5e39f56835c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/week_2/Multiply2.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -17,6 +29,9 @@
     </option>
   </component>
   <component name="ProjectId" id="1hXnPParTble2zfClJXdyoLwGhJ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -76,6 +91,7 @@
       <option name="presentableId" value="Default" />
       <updated>1600166279687</updated>
       <workItem from="1600166282470" duration="307000" />
+      <workItem from="1600183938323" duration="363000" />
     </task>
     <servers />
   </component>
@@ -87,21 +103,21 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="358" y="34" key="#Project_Structure/0.0.1920.1080@0.0.1920.1080" timestamp="1600166512652" />
-    <state width="1850" height="302" key="GridCell.Tab.0.bottom" timestamp="1600166589182">
+    <state width="1850" height="302" key="GridCell.Tab.0.bottom" timestamp="1600184310723">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1850" height="302" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1600166589182" />
-    <state width="1850" height="302" key="GridCell.Tab.0.center" timestamp="1600166589180">
+    <state width="1850" height="302" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1600184310723" />
+    <state width="1850" height="302" key="GridCell.Tab.0.center" timestamp="1600184310723">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1850" height="302" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1600166589180" />
-    <state width="1850" height="302" key="GridCell.Tab.0.left" timestamp="1600166589179">
+    <state width="1850" height="302" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1600184310723" />
+    <state width="1850" height="302" key="GridCell.Tab.0.left" timestamp="1600184310721">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1850" height="302" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1600166589179" />
-    <state width="1850" height="302" key="GridCell.Tab.0.right" timestamp="1600166589181">
+    <state width="1850" height="302" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1600184310721" />
+    <state width="1850" height="302" key="GridCell.Tab.0.right" timestamp="1600184310723">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1850" height="302" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1600166589181" />
+    <state width="1850" height="302" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1600184310723" />
   </component>
 </project>
