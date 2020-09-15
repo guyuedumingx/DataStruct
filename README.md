@@ -65,7 +65,7 @@ for(int cock_number=0;cock_number<=cock_number_top;cock_number++) {
 *代码实现*  
 
 ```java  
-for(int i=0; i<=arr.length; i++) {
+for(int i=0; i<=arr.length-1; i++) {
     for(int n=0; n<arr.length-i-1;n++) {
         if(arr[n] > arr[n+1]) {
              int temp = arr[n+1];
