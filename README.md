@@ -63,6 +63,7 @@ for(int cock_number=0;cock_number<=cock_number_top;cock_number++) {
 ![冒泡排序动图](res/image/BubbleSort.gif)  
 
 *代码实现*  
+
 ```java  
 for(int i=0; i<=arr.length; i++) {
     for(int n=0; n<arr.length-i-1;n++) {
@@ -73,11 +74,16 @@ for(int i=0; i<=arr.length; i++) {
         }
     }
 }
-```
+```  
 
 *快速排序*  
+
 ![快速排序动图](res/image/QuickSort.gif)  
 
+
+### Week_2   
+
+[**数组模拟乘法**](src/main/java/week_2/Multiply.java)  
 
 ### Contributer  
 
