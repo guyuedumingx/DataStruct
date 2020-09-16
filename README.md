@@ -83,7 +83,20 @@ for(int i=0; i<=arr.length-1; i++) {
 
 ### Week_2   
 
-[**数组模拟乘法**](src/main/java/week_2/Multiply.java)  
+*方法一*  
+[**数组模拟乘法1**](src/main/java/week_2/Multiply.java)  
+
+向上抽取的方法较多,反人类代码  
+
+*方法二*   
+[**数组模拟乘法2**](src/main/java/week_2/BigNum.java)  
+
+代码逻辑清晰,比较简单,容易理解  
+
+*方法三*   
+[**数组模拟乘法3**](src/main/java/week_2/Multiply2.java)  
+
+基于方法二的再简化版本,代码比较选学  
 
 ### Contributer  
 
