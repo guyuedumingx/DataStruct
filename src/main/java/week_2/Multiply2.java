@@ -4,7 +4,8 @@ package week_2;
 /**
  * 代码可行
  * 我自己都没搞懂
- * getBitArray函数在Multiply文件里
+ * getBitArray函数在方法一(Multiply)里
+ * parseArr函数在方法一(Multiply)里
  * @author wangwei
  */
 public class Multiply2 {
@@ -20,5 +21,7 @@ public class Multiply2 {
             sum[i+n] = sum[i+n] % 10;
             }
         }
+        String s = Multiply.parseArray(sum);
+        System.out.println(s);
     }
 }
