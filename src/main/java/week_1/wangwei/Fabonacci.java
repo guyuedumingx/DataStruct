@@ -1,4 +1,4 @@
-package week_1;
+package week_1.wangwei;
 
 /**
  * 斐波那契数列：

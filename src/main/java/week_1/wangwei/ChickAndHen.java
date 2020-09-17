@@ -1,4 +1,4 @@
-package week_1;
+package week_1.wangwei;
 
 /**
  * 百钱百鸡问题：

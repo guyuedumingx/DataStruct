@@ -83,19 +83,15 @@ for(int i=0; i<=arr.length-1; i++) {
 
 ### Week_2   
 
-*方法一*  
-[**数组模拟乘法1**](src/main/java/week_2/wangwei/Multiply.java)  
+**数组模拟乘法**  
 
+[*方法一*](src/main/java/week_2/wangwei/Multiply.java)  
 向上抽取的方法较多,反人类代码  
 
-*方法二*   
-[**数组模拟乘法2**](src/main/java/week_2/wangwei/BigNum.java)  
-
+[*方法二* ](src/main/java/week_2/zhenghuanxin/BigNum.java)  
 代码逻辑清晰,比较简单,容易理解  
 
-*方法三*   
-[**数组模拟乘法3**](src/main/java/week_2/wangwei/Multiply2.java)  
-
+[*方法三* ](src/main/java/week_2/wangwei/Multiply2.java)  
 基于方法二的再简化版本,代码比较选学  
 
 ### Contributer  
@@ -113,12 +109,12 @@ guyuedumingx
 > 建议您可以先将本项目Fork到您的项目中,再从您的github中clone到本地  
 > 避免因上游仓库链接问题`push`失败  
 
-1. clone仓库到本地  
+1.clone仓库到本地  
 ```
 git clone git@github.com:guyuedumingx/DataStruct.git
 ```
 
-2. 将项目导入到`eclipse`或者`idea`  
+2.将项目导入到`eclipse`或者`idea`  
 
 导入idea的方法：  
 ```
@@ -126,14 +122,16 @@ File -> New -> Project From Existing Sources -> 选择clone下来的文件夹
 -> Import Project From external model -> eclipse -> Finish  
 ```
 
-3. 在`src/main/java/week_n/`下建立自己的包(最好以名字拼音命名) 例如,`wangwei`  
+> 本项目是标准的`maven`项目,你可以按`maven`导入  
+
+3.在`src/main/java/week_n/`下建立自己的包(建议以名字拼音命名) 例如,`wangwei`  
 请将您的所有代码都写在您自己的包下  
 
-4. 建立`README`索引  
+4.建立`README`索引  
 
 修改`README.md`文件,将您的类链接到标题上,以便浏览  
 
-5. 提交`Pull Request` 给我 
+5.提交`Pull Request` 给我 
 
 ### Web  
 

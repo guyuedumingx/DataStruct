@@ -1,4 +1,4 @@
-package week_1;
+package week_1.wangwei;
 
 import java.io.File;
 import java.io.FileNotFoundException;

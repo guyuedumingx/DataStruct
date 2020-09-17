@@ -9,5 +9,8 @@
         <module name="DataStruct" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="DataStruct" target="6" />
+    </bytecodeTargetLevel>
   </component>
 </project>

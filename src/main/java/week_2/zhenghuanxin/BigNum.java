@@ -1,4 +1,4 @@
-package week_2;
+package week_2.zhenghuanxin;
 
 import java.util.Scanner;
 
