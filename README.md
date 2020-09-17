@@ -92,7 +92,7 @@ for(int i=0; i<=arr.length-1; i++) {
 代码逻辑清晰,比较简单,容易理解  
 
 [*方法三* ](src/main/java/week_2/wangwei/Multiply2.java)  
-基于方法二的再简化版本,代码比较选学  
+基于方法二的再简化版本,代码比较玄学  
 
 ### Contributer  
 
