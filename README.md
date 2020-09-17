@@ -1,7 +1,7 @@
 ## DataStruct
 
 ### Week_1  
-[**斐波那契数列**](src/main/java/week_1/Fabonacci.java)    
+[**斐波那契数列**](src/main/java/week_1/wangwei/Fabonacci.java)    
 
 ![斐波那契数列运行过程](res/image/Fabonacci.gif)  
 
@@ -17,7 +17,7 @@ int fabonacci(int n) {
 }
 ```
 
-[**递归**](src/main/java/week_1/Factorial.java)  
+[**递归**](src/main/java/week_1/wangwei/Factorial.java)  
 
 ![递归运行过程](res/image/Factorial.gif)  
 
@@ -31,7 +31,7 @@ int factorial(int n) {
 }
 ```
 
-[**百钱百鸡问题**](src/main/java/week_1/ChickAndHen.java)  
+[**百钱百鸡问题**](src/main/java/week_1/wangwei/ChickAndHen.java)  
 ![百钱百鸡函数拟合](res/image/HensAndCock.png)  
 
 *代码实现*  
@@ -57,7 +57,7 @@ for(int cock_number=0;cock_number<=cock_number_top;cock_number++) {
 }
 ```
 
-[**冒泡排序与快速排序**](src/main/java/week_1/BubbleSort.java)    
+[**冒泡排序与快速排序**](src/main/java/week_1/wangwei/BubbleSort.java)    
 
 *冒泡排序*  
 ![冒泡排序动图](res/image/BubbleSort.gif)  
@@ -84,17 +84,17 @@ for(int i=0; i<=arr.length-1; i++) {
 ### Week_2   
 
 *方法一*  
-[**数组模拟乘法1**](src/main/java/week_2/Multiply.java)  
+[**数组模拟乘法1**](src/main/java/week_2/wangwei/Multiply.java)  
 
 向上抽取的方法较多,反人类代码  
 
 *方法二*   
-[**数组模拟乘法2**](src/main/java/week_2/BigNum.java)  
+[**数组模拟乘法2**](src/main/java/week_2/wangwei/BigNum.java)  
 
 代码逻辑清晰,比较简单,容易理解  
 
 *方法三*   
-[**数组模拟乘法3**](src/main/java/week_2/Multiply2.java)  
+[**数组模拟乘法3**](src/main/java/week_2/wangwei/Multiply2.java)  
 
 基于方法二的再简化版本,代码比较选学  
 
