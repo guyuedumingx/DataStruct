@@ -108,6 +108,33 @@ guyuedumingx
 欢迎大家把自己的代码pull resquests  
 或者微信给我代码  
 
+### 参与维护  
+
+> 建议您可以先将本项目Fork到您的项目中,再从您的github中clone到本地  
+> 避免因上游仓库链接问题`push`失败  
+
+1. clone仓库到本地  
+```
+git clone git@github.com:guyuedumingx/DataStruct.git
+```
+
+2. 将项目导入到`eclipse`或者`idea`  
+
+导入idea的方法：  
+```
+File -> New -> Project From Existing Sources -> 选择clone下来的文件夹  
+-> Import Project From external model -> eclipse -> Finish  
+```
+
+3. 在`src/main/java/week_n/`下建立自己的包(最好以名字拼音命名) 例如,`wangwei`  
+请将您的所有代码都写在您自己的包下  
+
+4. 建立`README`索引  
+
+修改`README.md`文件,将您的类链接到标题上,以便浏览  
+
+5. 提交`Pull Request` 给我 
+
 ### Web  
 
 [十大经典排序动图](https://www.cnblogs.com/onepixel/articles/7674659.html)  
