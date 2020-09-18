@@ -1,5 +1,9 @@
 package week_2.wangwei.marquee;
 
+/**
+ * 一维数组跑马灯
+ * @author wangwei
+ */
 public class OneDimensional {
     public static void main(String[] args) {
         int[] arr = createArray(200);
@@ -7,6 +11,11 @@ public class OneDimensional {
         prt(run);
     }
 
+    /**
+     * 创建出一个顺序数组，第一位为1
+     * @param length 数组长度
+     * @return 返回创建的数组
+     */
     public static int[] createArray(int length) {
         int[] arr = new int[length];
         for(int i=0; i<length; i++) {
@@ -15,6 +24,12 @@ public class OneDimensional {
         return arr;
     }
 
+    /**
+     * 跑马灯的核心方法
+     * @param arr 传入数组
+     * @param step 每步移动的步长
+     * @return 返回的数组，用于验证
+     */
     private static int[] run(int[] arr, int step) {
         int[] res = new int[arr.length];
         int i = 0;
@@ -35,6 +50,10 @@ public class OneDimensional {
         return res;
     }
 
+    /**
+     * 打印数组
+     * @param arr 需要打印的数组
+     */
     private static void prt(int[] arr) {
         System.out.print("[");
         for(int u: arr) {
