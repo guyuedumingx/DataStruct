@@ -94,6 +94,13 @@ for(int i=0; i<=arr.length-1; i++) {
 [*方法三* ](src/main/java/week_2/wangwei/Multiply2.java)  
 基于方法二的再简化版本,代码比较玄学  
 
+**数组洗牌**    
+
+[*赌神模式1*](src/main/java/week_2/wangwei/PlayingCard/Gambler.java)  
+
+[*荷官模式1*](src/main/java/week_2/wangwei/PlayingCard/Croupier.java)  
+
+
 ### Contributer  
 
 guyuedumingx  

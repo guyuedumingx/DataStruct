@@ -29,7 +29,7 @@ public class Gambler {
      * @param arr1 需要洗牌的数组
      * @return
      */
-    public static int[] shuffle(int[] arr1) {
+    private static int[] shuffle(int[] arr1) {
        int[] arr2 = new int[arr1.length];
        //单指针
        int point = arr1.length / 2;
