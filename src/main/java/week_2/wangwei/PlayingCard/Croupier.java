@@ -44,7 +44,7 @@ public class Croupier {
      * @param seed 范围
      * @return 随机数
      */
-    private static int getRandom(int seed) {
+    public static int getRandom(int seed) {
        return new Random().nextInt(seed*2+1) - seed;
     }
 }
