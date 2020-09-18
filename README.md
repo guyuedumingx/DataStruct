@@ -100,6 +100,8 @@ for(int i=0; i<=arr.length-1; i++) {
 
 [*荷官模式1*](src/main/java/week_2/wangwei/PlayingCard/Croupier.java)  
 
+[*凡人模式1*](src/main/java/week_2/wangwei/PlayingCard/Ordinary.java)
+
 
 ### Contributer  
 
