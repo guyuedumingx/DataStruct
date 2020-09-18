@@ -27,17 +27,11 @@ public class Ordinary {
 
         while ((point1<flag) && (point2<arr1.length)) {
             pages = new Random().nextInt(6);
-            if (point1 + pages > flag) {
-                pages = flag - point1;
-            }
-            for (int i = 0; i < pages; i++) {
+            for (int i = 0; (i<pages)&&(point1<flag); i++) {
                 arr2[point3++] = arr1[point1++];
             }
             pages = new Random().nextInt(6);
-            if (point2 + pages > arr1.length) {
-                pages = arr1.length - point2;
-            }
-            for (int i = 0; i < pages; i++) {
+            for (int i = 0; (i<pages)&&(point2<arr1.length); i++) {
                 arr2[point3++] = arr1[point2++];
             }
         }
