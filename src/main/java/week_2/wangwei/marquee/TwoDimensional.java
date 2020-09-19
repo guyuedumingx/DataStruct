@@ -7,7 +7,7 @@ import java.io.IOException;
  * @author wangwei
  */
 public class TwoDimensional {
-    private static int step = 4;
+    private static int step = 5;
     private static int origin_length = 6;
     private static int length = origin_length;
     private static int[][] arr = createArray(origin_length);
@@ -20,9 +20,13 @@ public class TwoDimensional {
             prt(arr);
             for(int i=0; i<origin_length/2; i++) {
                 goRight(i, i);
+                prt(res);
                 goDown(i, length - 1);
+                prt(res);
                 goLeft(length - 1, length - 1);
+                prt(res);
                 goUp(length - 1, i);
+                prt(res);
                 length -= 1;
             }
             length = origin_length;
@@ -53,7 +57,7 @@ public class TwoDimensional {
         while (j<length-1) {
             int k = (j+step)%(length-1);
             int flag = 2*length-origin_length-1;
-            k = k==0 ? 2*j+step-length : k;
+            k = k==0 ? step+j+1-length : k;
             if(!(k>flag)) {
                 res[i+k][length-1] = arr[i][j++];
             }else {
@@ -74,7 +78,7 @@ public class TwoDimensional {
         while (i<length-1) {
             int k = (i+step)%(length-1);
             int flag = 2*length-origin_length-1;
-            k = k==0 ? 2*j+step-length : k;
+            k = k==0 ? step+i+1-length : k;
             if(!(k>flag)) {
                 res[length - 1][length-k-1] = arr[i++][j];
             }else {
@@ -97,7 +101,7 @@ public class TwoDimensional {
         while (j>min) {
             int k = (origin_length-1-j+step)%(length-1);
             int flag = 2*length-origin_length-1;
-            k = k==0 ? 2*j+step-length : k;
+            k = k==0 ? step-j+min : k;
             if(!(k>flag)) {
                 res[length-k-1][min] = arr[i][j--];
             } else {
@@ -120,7 +124,7 @@ public class TwoDimensional {
         while (i>min) {
             int k = (origin_length-i+step)%(length);
             int flag = 2*length-origin_length-1;
-            k = k==0 ? 2*j+step-length : k;
+            k = k==0 ? step-i+min : k;
             if(!(k>flag)) {
                 res[min][k+j] = arr[i--][j];
             }else {
