@@ -7,7 +7,7 @@ import java.io.IOException;
  * @author wangwei
  */
 public class TwoDimensional {
-    private static int step = 2;
+    private static int step = 4;
     private static int origin_length = 6;
     private static int length = origin_length;
     private static int[][] arr = createArray(origin_length);
@@ -52,7 +52,19 @@ public class TwoDimensional {
         }
         while (j<length-1) {
             int k = (j+step)%(length-1);
-            res[i+k][length-1] = arr[i][j++];
+            int flag = 2*length-origin_length-1;
+            k = k==0 ? 2*j+step-length : k;
+            if(!(k>flag)) {
+                res[i+k][length-1] = arr[i][j++];
+            }else {
+                int temp = arr[i][length-1];
+                int temp_step = step;
+                step = k;
+                arr[i][length-1] = arr[i][j++];
+                goDown(i,length-1);
+                arr[i][length-1] = temp;
+                step = temp_step;
+            }
         }
     }
     private static void goDown(int i, int j) {
@@ -61,7 +73,19 @@ public class TwoDimensional {
         }
         while (i<length-1) {
             int k = (i+step)%(length-1);
-            res[length-1][length-k-1] = arr[i++][j];
+            int flag = 2*length-origin_length-1;
+            k = k==0 ? 2*j+step-length : k;
+            if(!(k>flag)) {
+                res[length - 1][length-k-1] = arr[i++][j];
+            }else {
+               int temp = arr[length-1][length-1];
+               int temp_step = step;
+               step = k;
+               arr[length-1][length-1] = arr[i++][j];
+               goLeft(length-1,length-1);
+               arr[length-1][length-1] = temp;
+               step = temp_step;
+            }
         }
     }
     private static void goLeft(int i, int j) {
@@ -72,7 +96,19 @@ public class TwoDimensional {
         }
         while (j>min) {
             int k = (origin_length-1-j+step)%(length-1);
-            res[length-k-1][min] = arr[i][j--];
+            int flag = 2*length-origin_length-1;
+            k = k==0 ? 2*j+step-length : k;
+            if(!(k>flag)) {
+                res[length-k-1][min] = arr[i][j--];
+            } else {
+                int temp = arr[length-1][min];
+                int temp_step = step;
+                step = k;
+                arr[length-1][min] = arr[i][j--];
+                goUp(length-1,min);
+                arr[length-1][min] = temp;
+                step = temp_step;
+            }
         }
     }
 
@@ -83,7 +119,19 @@ public class TwoDimensional {
         }
         while (i>min) {
             int k = (origin_length-i+step)%(length);
-            res[min][k+j] = arr[i--][j];
+            int flag = 2*length-origin_length-1;
+            k = k==0 ? 2*j+step-length : k;
+            if(!(k>flag)) {
+                res[min][k+j] = arr[i--][j];
+            }else {
+                int temp = arr[min][min];
+                int temp_step = step;
+                step = k;
+                arr[min][min] = arr[i--][j];
+                goRight(min,min);
+                arr[min][min] = temp;
+                step = temp_step;
+            }
         }
     }
 
