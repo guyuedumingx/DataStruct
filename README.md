@@ -1,5 +1,5 @@
 ## DataStruct
-### aaaaaaaaa
+
 ### Week_1  
 [**斐波那契数列**](src/main/java/week_1/wangwei/Fabonacci.java)    
 
@@ -106,7 +106,9 @@ for(int i=0; i<=arr.length-1; i++) {
 
 [*一维数组跑马灯*](src/main/java/week_2/wangwei/marquee/OneDimensional.java)  
 
-[*二维数组跑马灯*](src/main/java/week_2/wangwei/marquee/TwoDimensional.java)  
+[*二维数组跑马灯1*](src/main/java/week_2/wangwei/marquee/TwoDimensional.java)  
+
+[*二维数组跑马灯2*](src/main/java/week_2/wangwei/marquee/TwoDimensional2.java)  
 
 
 ### Contributer  
