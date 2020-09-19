@@ -26,8 +26,10 @@ public class Gambler {
 
     /**
      * 洗牌方法
+     * point-len为左手洗牌
+     * point为右手洗牌
      * @param arr1 需要洗牌的数组
-     * @return
+     * @return 返回洗完牌的数组
      */
     private static int[] shuffle(int[] arr1) {
        int[] arr2 = new int[arr1.length];

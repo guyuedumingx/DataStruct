@@ -4,6 +4,8 @@ import java.util.Random;
 
 /**
  * 荷官模式
+ * 分左右手的指针随机偏移[0-3]
+ * 每次只下一张牌
  * @author wangwei
  */
 public class Croupier {

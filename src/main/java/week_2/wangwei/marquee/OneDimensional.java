@@ -2,6 +2,8 @@ package week_2.wangwei.marquee;
 
 /**
  * 一维数组跑马灯
+ * 步长为2时:
+ * [1,2,3,4,5,6,7,8,9] -> [8,9,1,2,3,4,5,6,]
  * @author wangwei
  */
 public class OneDimensional {
