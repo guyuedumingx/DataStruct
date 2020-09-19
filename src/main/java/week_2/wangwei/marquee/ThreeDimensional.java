@@ -2,22 +2,17 @@ package week_2.wangwei.marquee;
 
 import java.io.IOException;
 
-/**
- * 二维数组跑马灯
- * step支持1-2
- * 只支持顺序
- * @author wangwei
- */
-public class TwoDimensional {
+public class ThreeDimensional {
+
     private static int step = 2;
     private static int origin_length = 4;
     private static int length = origin_length;
-    private static int[][] arr = createArray(origin_length);
-    private static int[][] res = new int[origin_length][origin_length];
+    private static int[][][] arr = createArray(origin_length);
+    private static int[][][] res = new int[origin_length][origin_length][origin_length];
     private static int[] diagonalNumbers = new int[origin_length/2];
 
     public static void main(String[] args) throws IOException {
-        saveDiagonalsNumbers();
+        DiagonalsNumbers();
         do {
             prt(arr);
             for(int i=0; i<origin_length/2; i++) {
@@ -29,18 +24,18 @@ public class TwoDimensional {
             }
             length = origin_length;
             arr = res;
-            res = new int[origin_length][origin_length];
+            res = new int[origin_length][origin_length][origin_length];
         }while (!isEquals(arr));
         prt(arr);
     }
 
-    private static void saveDiagonalsNumbers() {
-       for(int i=0; i<origin_length/2; i++) {
-           diagonalNumbers[i] = arr[i][i];
-       }
+    private static void DiagonalsNumbers() {
+        for(int i=0; i<origin_length/2; i++) {
+            diagonalNumbers[i] = arr[i][i];
+        }
     }
 
-    private static boolean isEquals(int[][] arr) {
+    private static boolean isEquals(int[][][] arr) {
         boolean flag = true;
         for(int i=0; i<origin_length/2 && flag; i++) {
             flag = (diagonalNumbers[i]==arr[i][i]);
@@ -89,23 +84,25 @@ public class TwoDimensional {
         }
     }
 
-    public static int[][] createArray(int length) {
-        int[][] arr =  new int[length][length];
+    public static int[][][] createArray(int length) {
+        int[][][] arr =  new int[length][length][length];
         int n = 1;
         for(int i=0;i<length;i++) {
             for(int j=0; j<length; j++) {
-                arr[i][j] = n++;
+                for(int k=0;k<length; k++) {
+                    arr[i][j][k] = n++;
+                }
             }
         }
         return arr;
     }
 
-    public static void prt(int[][] arr) {
+    public static void prt(int[][][] arr, int zhou) {
         for(int i=0; i<arr.length; i++) {
             System.out.print("[");
-           for (int j=0; j<arr[i].length; j++) {
-               System.out.print(arr[i][j]+"\t");
-           }
+            for (int j=0; j<arr[i].length; j++) {
+                System.out.print(arr[zhou][i][j]+"\t");
+            }
             System.out.println("]");
         }
         System.out.println();

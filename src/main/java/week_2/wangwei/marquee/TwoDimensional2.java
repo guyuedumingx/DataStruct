@@ -5,11 +5,12 @@ import java.io.IOException;
 /**
  * 二维数组跑马灯
  * step支持1-4
+ * 只支持顺序
  * @author wangwei
  */
 public class TwoDimensional2 {
-    private static int step = 4;
-    private static int origin_length = 6;
+    private static int step = 2;
+    private static int origin_length = 3;
     private static int length = origin_length;
     private static int[][] arr = createArray(origin_length);
     private static int[][] res = new int[origin_length][origin_length];
