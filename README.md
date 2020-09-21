@@ -110,6 +110,8 @@ for(int i=0; i<=arr.length-1; i++) {
 
 [*二维数组跑马灯2*](src/main/java/week_2/wangwei/marquee/TwoDimensional2.java)  
 
+[**第二周作业聚合版**](src/main/java/week_2/wuyanzhen/Week2.java)  
+
 
 ### Contributer  
 
