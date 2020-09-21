@@ -10,70 +10,70 @@ public class ThreeDimensional {
     static int x = 0;
     static int y = 0;
     static int z = 0;
-    static char c = 'x';
+    static char c = 'y';
 
     public static void main(String[] args) throws IOException {
         int[][] twoDimensionalArray = getTwoDimensionalArray();
         int[][] run = TwoDimensional.run(twoDimensionalArray);
         saveValue(run);
-        System.out.println("length");
     }
 
 
 
     public static int[][] getTwoDimensionalArray() {
         int[][] temp = new int[length][length];
-        switch (c) {
-            case 'x':
-                for(int i=0; i<length; i++) {
-                    for(int j=0; j<length; j++) {
-                        temp[i][j] = arr[x][i][j];
-                    }
+        int l,m,n;
+        l = m = n = 0;
+        for(int i=0; i<length; i++) {
+            for(int j=0; j<length; j++) {
+                switch (c) {
+                    case 'x':
+                        l = x;
+                        m = i;
+                        n = j;
+                        break;
+                    case 'y':
+                        l = i;
+                        m = y;
+                        n = j;
+                        break;
+                    case 'z':
+                        l = i;
+                        m = j;
+                        n = z;
+                        break;
                 }
-                break;
-            case 'y':
-                for(int i=0; i<length; i++){
-                    for(int j=0; j<length; j++) {
-                        temp[i][j] = arr[i][y][j];
-                    }
-                }
-                break;
-            case 'z':
-                for(int i=0; i<length; i++) {
-                    for(int j=0; j<length; j++) {
-                        temp[i][j] = arr[i][j][z];
-                    }
-                }
-                break;
+                temp[i][j] = arr[l][m][n];
+            }
         }
         return temp;
     }
 
     public static void saveValue(int[][] temp) {
-        switch (c) {
-            case 'x':
-                for(int i=0; i<length; i++) {
-                    for(int j=0; j<length; j++) {
-                        arr[x][i][j] = temp[i][j];
-                    }
+        int l,m,n;
+        l = m = n = 0;
+        for(int i=0; i<length; i++) {
+            for (int j = 0; j < length; j++) {
+                switch (c) {
+                    case 'x':
+                        l = x;
+                        m = i;
+                        n = j;
+                        break;
+                    case 'y':
+                        l = i;
+                        m = y;
+                        n = j;
+                        break;
+                    case 'z':
+                        l = i;
+                        m = j;
+                        n = z;
+                        break;
                 }
-                break;
-            case 'y':
-                for(int i=0; i<length; i++){
-                    for(int j=0; j<length; j++) {
-                        arr[i][y][j] = temp[i][j];
-                    }
-                }
-                break;
-            case 'z':
-                for(int i=0; i<length; i++) {
-                    for(int j=0; j<length; j++) {
-                        arr[i][j][z] = temp[i][j];
-                    }
-                }
-                break;
+                arr[l][m][n] = temp[i][j];
+            }
         }
-
     }
 
     public static int[][][] createArray(int x) {
