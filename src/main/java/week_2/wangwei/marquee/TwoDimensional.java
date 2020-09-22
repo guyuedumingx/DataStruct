@@ -158,7 +158,6 @@ public class TwoDimensional {
         res = new int[length][length];
         int length = 3;
         arr = in;
-        prt(arr);
         for(int i=0; i<1; i++) {
             goRight(i, i);
             goDown(i, length - 1);
@@ -166,7 +165,7 @@ public class TwoDimensional {
             goUp(length - 1, i);
             length -= 1;
         }
-        prt(res);
+        res[length/2][length/2] = arr[length/2][length/2];
         return res;
     }
 }
