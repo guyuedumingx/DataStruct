@@ -34,10 +34,10 @@ public class Week3 {
      * @return 头链表
      */
     public static <T> Node getInverseOrderList(T[] data){
-        Node<T> head=new Node<>();
+        Node<T> head=new Node<T>();
         int count=0;
         while (count<data.length){
-            Node<T> newNode =new Node<>(data[count]);
+            Node<T> newNode =new Node<T>(data[count]);
             newNode.next=head.next;
             head.next=newNode;
             count++;
@@ -53,11 +53,11 @@ public class Week3 {
      * @return 返回头节点
      */
     public static  <T> Node getRightOrderList (T[] data){
-        Node<T> head = new Node<>();
+        Node<T> head = new Node<T>();
         Node<T> nowNode=head;
         int count=0;
         while (count<data.length){
-            Node<T> newNode=new Node<>(data[count]);
+            Node<T> newNode=new Node<T>(data[count]);
             nowNode.next=newNode;
             nowNode=newNode;
             count++;
