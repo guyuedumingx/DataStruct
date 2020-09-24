@@ -12,7 +12,7 @@ public class TwoDimensional {
     //每次走的步长
     private static int step = 2;
     //初始化的时候的
-    private static int origin_length = 4;
+    private static int origin_length = 3;
     private static int length = origin_length;
     private static int[][] arr = createArray(origin_length);
     private static int[][] res = new int[origin_length][origin_length];
@@ -64,7 +64,7 @@ public class TwoDimensional {
      * @param i
      * @param j
      */
-    private static void goRight(int i, int j) {
+    public static void goRight(int i, int j) {
         while (j+step<length) {
             res[i][j+step] = arr[i][j++];
         }
@@ -79,7 +79,7 @@ public class TwoDimensional {
      * @param i
      * @param j
      */
-    private static void goDown(int i, int j) {
+    public static void goDown(int i, int j) {
         while (i+step<length) {
             res[i+step][j] = arr[i++][j];
         }
@@ -94,7 +94,7 @@ public class TwoDimensional {
      * @param i
      * @param j
      */
-    private static void goLeft(int i, int j) {
+    public static void goLeft(int i, int j) {
         //走到的最小左脚标
         int min = origin_length - length;
         while (j-step>=min) {
@@ -111,7 +111,7 @@ public class TwoDimensional {
      * @param i
      * @param j
      */
-    private static void goUp(int i, int j) {
+    public static void goUp(int i, int j) {
         //走到的最小左脚标
         int min = origin_length - length;
         while (i-step>=min) {
@@ -152,5 +152,20 @@ public class TwoDimensional {
             System.out.println("]");
         }
         System.out.println();
+    }
+
+    public static int[][] run(int[][] in) {
+        res = new int[length][length];
+        int length = 3;
+        arr = in;
+        for(int i=0; i<1; i++) {
+            goRight(i, i);
+            goDown(i, length - 1);
+            goLeft(length - 1, length - 1);
+            goUp(length - 1, i);
+            length -= 1;
+        }
+        res[length/2][length/2] = arr[length/2][length/2];
+        return res;
     }
 }
