@@ -114,6 +114,10 @@ for(int i=0; i<=arr.length-1; i++) {
 
 [**第二周作业聚合版**](src/main/java/week_2/wuyanzhen/Week2.java)  
 
+### Week3  
+
+[*第三周作业聚合版*](src/main/java/week_3/wuyanzhen/Week3.java)  
+
 
 ### Contributer  
 

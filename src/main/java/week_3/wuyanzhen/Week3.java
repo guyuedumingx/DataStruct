@@ -1,4 +1,4 @@
-package Week_3.wuyanzhen;
+package week_3.wuyanzhen;
 
 /**
  * @author Florence
