@@ -87,6 +87,9 @@ class MyLink<T> {
         }
     }
 
+    /**
+     * 隔位迭代遍历链表
+     */
     public void distantIterator() {
         Node<T> root = head.next;
         while (root!=null) {
