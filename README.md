@@ -116,7 +116,11 @@ for(int i=0; i<=arr.length-1; i++) {
 
 ### Week3  
 
-[**第三周作业**](src/main/java/week_3/wuyanzhen/Week3.java)  
+[**第三周作业1**](src/main/java/week_3/wangwei/MyLinkDemo.java)  
+Code from wangwei  
+
+[**第三周作业2**](src/main/java/week_3/wuyanzhen/Week3.java)  
+Code from wuyanzhen  
 
 
 ### Contributer  

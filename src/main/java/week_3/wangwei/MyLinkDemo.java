@@ -1,27 +1,28 @@
 package week_3.wangwei;
 
-import java.util.ArrayList;
 
 public class MyLinkDemo {
 
     public static void main(String[] args) {
         MyLink<Integer> myLink = new MyLink<Integer>();
-        myLink.add(0);
-        myLink.add(1);
-        myLink.add(2);
-        myLink.add(3);
-        myLink.showData(myLink.head);
+        myLink.add(40);
+        myLink.add(30);
+        myLink.add(20);
+        myLink.add(10);
+        myLink.addLast(50);
+        myLink.addLast(80);
+        myLink.distantIterator();
     }
 }
 
 class MyLink<T> {
 
-    Node head = new Node();
+    Node<T> head = new Node<T>();
 
     /**
      * 节点类
      */
-    class Node {
+    class Node<T> {
         T data;
         Node next;
         public Node() {}
@@ -33,31 +34,61 @@ class MyLink<T> {
     /**
      * 头插法
      * @param t 传入的数据值
-     * @param <T>
      */
-    public <T> void add(T t) {
+    public void add(T t) {
         Node s = new Node(t);
         s.next = head.next;
         head.next = s;
     }
 
     /**
-     * 后序遍历
+     *尾插法
+     * @param t
+     */
+    public void addLast(T t) {
+        Node<T> root = head;
+        while(root.next!=null) {
+            root = root.next;
+        }
+        root.next = new Node(t);
+    }
+
+    /**
+     * 后序遍历递归法
      * @param n 传入的遍历节点
      */
-    public void showData(Node n) {
+    public void dfs(Node n) {
        if (n==null) {return;}
-       showData(n.next);
+       dfs(n.next);
        System.out.println(n.data);
     }
 
     /**
-     * 后序遍历
+     * 先序遍历递归法
      * @param n
      */
-    public void dShowData(Node n) {
+    public void bfs(Node n) {
         if (n==null) {return;}
         System.out.println(n.data);
-        showData(n.next);
+        bfs(n.next);
+    }
+
+    /**
+     * 迭代法先序遍历
+     */
+    public void showDataIterator() {
+        Node<T> root = head.next;
+        while (root!=null) {
+            System.out.println(root.data);
+            root = root.next;
+        }
+    }
+
+    public void distantIterator() {
+        Node<T> root = head.next;
+        while (root!=null) {
+            System.out.println(root.data);
+            root = root.next.next;
+        }
     }
 }
