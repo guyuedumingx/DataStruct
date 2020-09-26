@@ -1,6 +1,9 @@
 package week_3.wangwei;
 
-
+/**
+ * 第三周作业
+ * @author wangwei
+ */
 public class MyLinkDemo {
 
     public static void main(String[] args) {
