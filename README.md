@@ -2,38 +2,7 @@
 
 [**Week_1**](./src/main/java/week_1/README.md)  
 
-### Week_2   
-
-**数组模拟乘法**  
-
-[*方法一*](src/main/java/week_2/wangwei/Multiply.java)  
-向上抽取的方法较多,反人类代码  
-
-[*方法二* ](src/main/java/week_2/zhenghuanxin/BigNum.java)  
-代码逻辑清晰,比较简单,容易理解  
-
-[*方法三* ](src/main/java/week_2/wangwei/Multiply2.java)  
-基于方法二的再简化版本,代码比较玄学  
-
-**数组洗牌**    
-
-[*赌神模式1*](src/main/java/week_2/wangwei/PlayingCard/Gambler.java)  
-
-[*荷官模式1*](src/main/java/week_2/wangwei/PlayingCard/Croupier.java)  
-
-[*凡人模式1*](src/main/java/week_2/wangwei/PlayingCard/Ordinary.java)
-
-**跑马灯**  
-
-[*一维数组跑马灯*](src/main/java/week_2/wangwei/marquee/OneDimensional.java)  
-
-[*二维数组跑马灯1*](src/main/java/week_2/wangwei/marquee/TwoDimensional.java)  
-
-[*二维数组跑马灯2*](src/main/java/week_2/wangwei/marquee/TwoDimensional2.java)  
-
-[*三维数组跑马灯*](src/main/java/week_2/wangwei/marquee/ThreeDimensional.java)  
-
-[**第二周作业聚合版**](src/main/java/week_2/wuyanzhen/Week2.java)  
+[**Week_2**](./src/main/java/week_2/README.md)  
 
 ### Week3  
 

@@ -22,7 +22,7 @@ Code from wangwei
 [*荷官模式1*](./wangwei/PlayingCard/Croupier.java)  
 Code from wangwei  
 
-[*凡人模式1*](./wangwei/PlayingCard/Ordinary.java)
+[*凡人模式1*](./wangwei/PlayingCard/Ordinary.java)  
 Code from wangwei  
 
 **跑马灯**  
