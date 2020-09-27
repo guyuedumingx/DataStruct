@@ -51,11 +51,11 @@ class MyLink {
 
     //从后面开始插入结点
     public void addLast(int v) {
-        Node root = head;
-        while (root.next != null) {
-            root = root.next;
+        Node cur = head;
+        while (cur.next != null) {
+            cur = cur.next;
         }
-        root.next = new Node(v);
+        cur.next = new Node(v);
     }
 
     //压栈后从后往前遍历
