@@ -36,11 +36,15 @@ Code from dqy
 
 **跑马灯**  
 
+*一维数组跑马灯*  
+
 [*一维数组跑马灯1*](./wangwei/marquee/OneDimensional.java)  
 Code from wangwei  
 
 [*一维数组跑马灯2*](./dqy/w5/Main.java)  
 Code from dqy  
+
+*二维数组跑马灯*  
 
 [*二维数组跑马灯1*](./wangwei/marquee/TwoDimensional.java)  
 Code from wangwei  
@@ -48,14 +52,15 @@ Code from wangwei
 [*二维数组跑马灯2*](./wangwei/marquee/TwoDimensional2.java)  
 Code from wangwei  
 
-
 [*二维数组跑马灯3*](./dqy/w6/Main.java)    
 Code from dqy  
+
+*三维数组跑马灯*   
 
 [*三维数组跑马灯1*](./wangwei/marquee/ThreeDimensional.java)  
 Code from wangwei  
 
-[*二维数组跑马灯2*](./dqy/w7/Main.java)    
+[*三维数组跑马灯2*](./dqy/w7/Main.java)    
 Code from dqy  
 
 **数组反转**  
