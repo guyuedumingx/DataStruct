@@ -3,8 +3,6 @@
 ### Week_1  
 [**斐波那契数列**](src/main/java/week_1/wangwei/Fabonacci.java)    
 
-![斐波那契数列运行过程](res/image/Fabonacci.gif)  
-
 *代码实现*  
 ```java  
 int fabonacci(int n) {
@@ -18,8 +16,6 @@ int fabonacci(int n) {
 ```
 
 [**递归**](src/main/java/week_1/wangwei/Factorial.java)  
-
-![递归运行过程](res/image/Factorial.gif)  
 
 *代码实现*  
 ```java  
