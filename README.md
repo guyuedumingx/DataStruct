@@ -143,14 +143,14 @@ dqy
 ```
 git clone git@github.com:guyuedumingx/DataStruct.git
 ```
+> 如果你使用idea,可忽略这一步  
 
 2.将项目导入到`eclipse`或者`idea`  
 
 导入idea的方法：  
 ```
-File -> New -> Project From Existing Sources -> 选择clone下来的文件夹  
--> Import Project From external model -> eclipse -> Finish  
-```
+File -> New -> Project From Version Control -> git@github.com:guyuedumingx/DataStruct.git  > clone   
+```  
 
 > 本项目是标准的`maven`项目,你可以按`maven`导入  
 
@@ -161,7 +161,10 @@ File -> New -> Project From Existing Sources -> 选择clone下来的文件夹
 
 修改`README.md`文件,将您的类链接到标题上,以便浏览  
 
-5.提交`Pull Request` 给我 
+5.提交`Pull Requests` 给我 
+
+> 或者微信告诉我,我把你添加成贡献者  
+
 
 ### Web  
 
