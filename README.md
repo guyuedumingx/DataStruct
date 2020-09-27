@@ -1,6 +1,6 @@
 ## DataStruct
 
-[**Week_1**](./src/main/java/Week_1/README.md)  
+[**Week_1**](./src/main/java/Week_1/README)  
 
 ### Week_2   
 
