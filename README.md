@@ -1,12 +1,12 @@
 ## DataStruct
 
-[**Week_1**](./src/main/java/week_1/README.md)  
+[**Week_1**](./src/main/java/week_1)  
 存放第一周作业  
 
-[**Week_2**](./src/main/java/week_2/README.md)  
+[**Week_2**](./src/main/java/week_2)  
 存放第二周作业  
 
-[**Week_3**](./src/main/java/week_3/README.md)  
+[**Week_3**](./src/main/java/week_3)  
 存放第三周作业  
 
 ### Contributors    
