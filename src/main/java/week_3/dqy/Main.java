@@ -52,9 +52,11 @@ class MyLink {
     //从后面开始插入结点
     public void addLast(int v) {
         Node cur = head;
+        //寻找最后一个节点
         while (cur.next != null) {
             cur = cur.next;
         }
+        //在最后一个结点后加一个结点
         cur.next = new Node(v);
     }
 
