@@ -1,4 +1,4 @@
-package week_1;
+package week_1.wangwei;
 
 /**
  * 阶乘的递归算法和非递归算法的时间复杂度比较

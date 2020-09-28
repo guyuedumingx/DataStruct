@@ -1,6 +1,6 @@
 
 import org.junit.Test;
-import week_1.BubbleSort;
+import week_1.wangwei.BubbleSort;
 
 import java.io.FileNotFoundException;
 

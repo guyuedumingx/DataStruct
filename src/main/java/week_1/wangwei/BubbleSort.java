@@ -1,4 +1,4 @@
-package week_1;
+package week_1.wangwei;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -25,7 +25,7 @@ public class BubbleSort {
 
     public static long sort(int[] arr) {
         long start = System.nanoTime();
-        for(int i=0; i<=arr.length; i++) {
+        for(int i=0; i<=arr.length-1; i++) {
            for(int n=0; n<arr.length-i-1;n++) {
                if(arr[n] > arr[n+1]) {
                    int temp = arr[n+1];
