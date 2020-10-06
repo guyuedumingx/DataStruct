@@ -1,5 +1,7 @@
-package Week_3.wuyanzhen;
+package Week_4;
 
+
+import Week_4.Node;
 
 import java.util.Comparator;
 import java.util.LinkedList;
@@ -30,7 +32,7 @@ public class Week4 {
 //        showListBeforeRecursion(rightOrderList);
         multiplyAdd(getMultiply());
     }
-    public static <T> void insertNode(Node<T> fore,Node<T> wanToInsert ){
+    public static <T> void insertNode(Node<T> fore, Node<T> wanToInsert ){
         wanToInsert.next=fore.next;
         fore.next=wanToInsert;
     }
