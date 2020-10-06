@@ -1,7 +1,7 @@
-package Week_4;
+package week_4.wuyanzhen;
 
 
-import Week_4.Node;
+import week_4.wuyanzhen.Node;
 
 import java.util.Comparator;
 import java.util.LinkedList;
