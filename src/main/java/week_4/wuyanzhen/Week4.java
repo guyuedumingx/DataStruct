@@ -75,7 +75,7 @@ public class Week4 {
                 }
                 //否则调用插入函数
                 else {
-                    insertNode(cur,new Node<>(NodeB.data));
+                    insertNode(cur,new Node<T>(NodeB.data));
                     cur=cur.next.next;
                 }
             }
@@ -95,7 +95,7 @@ public class Week4 {
             cur=cur.next;
         }
         if (cur.next!=null){
-            insertNode(cur,new Node<>(NodeB.data));
+            insertNode(cur,new Node<T>(NodeB.data));
         }
     }
 
@@ -112,13 +112,13 @@ public class Week4 {
             if (cur!=null){
                 //不是末尾
                 if (cur.next!=null) {
-                    insertNode(cur, new Node<>(NodeA.data));
+                    insertNode(cur, new Node<T>(NodeA.data));
                     //跳两步
                     cur=cur.next.next;
                 }
                 //到达末尾
                 else{
-                    cur.next=new Node<>(NodeA.data);
+                    cur.next=new Node<T>(NodeA.data);
                     return;
                 }
             }
@@ -250,7 +250,7 @@ public class Week4 {
      * @return 分割的链表
      */
     public static <T> java.util.List<Node> divideList(Node head,T oneKind){
-        java.util.List<Node> nodes = new LinkedList<>();
+        java.util.List<Node> nodes = new LinkedList<Node>();
         Node<T> listA=new Node<T>();
         Node listB=new Node();
         Node cur =head.next;

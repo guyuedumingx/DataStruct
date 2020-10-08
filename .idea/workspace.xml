@@ -20,7 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="08caa06f-fd43-46db-9758-420d57b9208d" name="Default Changelist" comment="吴彦臻完成weekfour">
-      <change beforePath="$PROJECT_DIR$/.idea/DataStruct.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/DataStruct.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/week_4/wangwei/Week4.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,7 +51,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Chat" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -63,7 +63,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.BubbleSort">
+  <component name="RunManager" selected="Application.Week4">
     <configuration name="BubbleSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="BubbleSort" />
       <module name="DataStruct" />
@@ -104,6 +104,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Week4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="week_4.wangwei.Week4" />
+      <module name="DataStruct" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="week_4.wangwei.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="week1Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DataStruct" />
       <option name="PACKAGE_NAME" value="" />
@@ -129,9 +142,11 @@
       <item itemvalue="Application.ChickAndHen (1)" />
       <item itemvalue="JUnit.week1Test" />
       <item itemvalue="JUnit.week1Test.FileTest" />
+      <item itemvalue="Application.Week4" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Week4" />
         <item itemvalue="Application.BubbleSort" />
         <item itemvalue="Application.ChickAndHen (1)" />
         <item itemvalue="JUnit.week1Test.FileTest" />
@@ -154,6 +169,7 @@
       <workItem from="1599975802793" duration="2066000" />
       <workItem from="1600660844502" duration="49000" />
       <workItem from="1600660932669" duration="18000" />
+      <workItem from="1602170658303" duration="2208000" />
     </task>
     <task id="LOCAL-00001" summary="吴彦臻完成weekfour">
       <created>1601708001789</created>
@@ -173,12 +189,13 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="吴彦臻完成weekfour" />
@@ -205,6 +222,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="637" y="348" width="642" height="358" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1080@0.0.1920.1080" timestamp="1599966944050" />
+    <state x="565" y="168" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1602170977862">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="565" y="168" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1602170977862" />
     <state width="493" height="700" key="DebuggerActiveHint" timestamp="1599968283505">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -214,26 +235,26 @@
     </state>
     <state x="2606" y="139" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1600660943998" />
     <state x="549" y="110" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1599975832519" />
-    <state width="1478" height="246" key="GridCell.Tab.0.bottom" timestamp="1599978373114">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1850" height="146" key="GridCell.Tab.0.bottom" timestamp="1602173034318">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1478" height="246" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1599978373114" />
-    <state width="1850" height="322" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1599984847553" />
-    <state width="1478" height="246" key="GridCell.Tab.0.center" timestamp="1599978373114">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1850" height="146" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1602173034318" />
+    <state width="1850" height="146" key="GridCell.Tab.0.center" timestamp="1602173034315">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1478" height="246" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1599978373114" />
-    <state width="1850" height="322" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1599984847551" />
-    <state width="1478" height="246" key="GridCell.Tab.0.left" timestamp="1599978373114">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1850" height="146" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1602173034315" />
+    <state width="1850" height="146" key="GridCell.Tab.0.left" timestamp="1602173034314">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1478" height="246" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1599978373114" />
-    <state width="1850" height="322" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1599984847550" />
-    <state width="1478" height="246" key="GridCell.Tab.0.right" timestamp="1599978373114">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1850" height="146" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1602173034314" />
+    <state width="1850" height="146" key="GridCell.Tab.0.right" timestamp="1602173034316">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1478" height="246" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1599978373114" />
-    <state width="1850" height="322" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1599984847552" />
+    <state width="1850" height="146" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1602173034316" />
     <state width="1850" height="322" key="GridCell.Tab.1.bottom" timestamp="1599984844211">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -270,6 +291,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="654" y="11" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1599984561272" />
+    <state x="451" y="-2" width="1009" height="1470" key="search.everywhere.popup" timestamp="1602172661881">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="451" y="-2" width="1009" height="1470" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1602172661881" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
