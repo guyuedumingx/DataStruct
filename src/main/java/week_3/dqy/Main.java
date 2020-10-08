@@ -62,19 +62,25 @@ class MyLink {
 
     //压栈后从后往前遍历
     public void searchFromBack(Node n) {
+        //判断当前点是否为空
         if (n == null) {
             return;
         }
+        //
         searchFromBack(n.next);
+        //
         System.out.print(n.data + " ");
     }
 
     //从前往后递归遍历
     public void searchFromBeginning(Node n) {
+        //判断当前结点是否为空
         if (n == null) {
             return;
         }
+        //输出当前结点
         System.out.print(n.data + " ");
+        //搜索下一个结点
         searchFromBeginning(n.next);
     }
 
