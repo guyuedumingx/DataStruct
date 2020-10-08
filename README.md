@@ -1,127 +1,15 @@
 ## DataStruct
 
-### Week_1  
-[**斐波那契数列**](src/main/java/week_1/wangwei/Fabonacci.java)    
+[**Week_1**](./src/main/java/week_1)  
+存放第一周作业  
 
-*代码实现*  
-```java  
-int fabonacci(int n) {
-	if(n == 1)
-        return 0;
-    else if(n == 2)
-        return 1;
-    else
-        return fabonacci(n-1) + fabonacci(n-2);
-}
-```
+[**Week_2**](./src/main/java/week_2)  
+存放第二周作业  
 
-[**递归**](src/main/java/week_1/wangwei/Factorial.java)  
+[**Week_3**](./src/main/java/week_3)  
+存放第三周作业  
 
-*代码实现*  
-```java  
-int factorial(int n) {
-    if(n == 1)
-        return 1;
-    else
-        return n * factorial(n-1);
-}
-```
-
-[**百钱百鸡问题**](src/main/java/week_1/wangwei/ChickAndHen.java)  
-![百钱百鸡函数拟合](res/image/HensAndCock.png)  
-
-*代码实现*  
-```java  
-int cock_pride = 5; 
-int hen_pride = 3;
-float chick_pride = 1/3;
-
-//最大可能的公鸡数
-int cock_number_top = sum/cock_pride;
-//最大可能的母鸡数
-int hen_number_top = sum/ hen_pride;
-//公鸡数从0开始递增
-for(int cock_number=0;cock_number<=cock_number_top;cock_number++) {
-    //母鸡数从0开始递增
-    for(int hem_number=0;hem_number<=hen_number_top;hem_number++) {
-        //小鸡数
-        int chick_number = sum - cock_number - hem_number;
-        //小鸡数量必须是3的倍数,各种鸡的数量和价格乘积为钱数
-        if(chick_number%3==0 && ((cock_number*cock_pride+hem_number* hen_pride +
-                chick_number*chick_pride)==sum)){}
-    }
-}
-```
-
-[**冒泡排序与快速排序**](src/main/java/week_1/wangwei/BubbleSort.java)    
-
-*冒泡排序*  
-![冒泡排序动图](res/image/BubbleSort.gif)  
-
-*代码实现*  
-
-```java  
-for(int i=0; i<=arr.length-1; i++) {
-    for(int n=0; n<arr.length-i-1;n++) {
-        if(arr[n] > arr[n+1]) {
-             int temp = arr[n+1];
-             arr[n+1] = arr[n];
-             arr[n] = temp;
-        }
-    }
-}
-```  
-
-*快速排序*  
-
-![快速排序动图](res/image/QuickSort.gif)  
-
-
-### Week_2   
-
-**数组模拟乘法**  
-
-[*方法一*](src/main/java/week_2/wangwei/Multiply.java)  
-向上抽取的方法较多,反人类代码  
-
-[*方法二* ](src/main/java/week_2/zhenghuanxin/BigNum.java)  
-代码逻辑清晰,比较简单,容易理解  
-
-[*方法三* ](src/main/java/week_2/wangwei/Multiply2.java)  
-基于方法二的再简化版本,代码比较玄学  
-
-**数组洗牌**    
-
-[*赌神模式1*](src/main/java/week_2/wangwei/PlayingCard/Gambler.java)  
-
-[*荷官模式1*](src/main/java/week_2/wangwei/PlayingCard/Croupier.java)  
-
-[*凡人模式1*](src/main/java/week_2/wangwei/PlayingCard/Ordinary.java)
-
-**跑马灯**  
-
-[*一维数组跑马灯*](src/main/java/week_2/wangwei/marquee/OneDimensional.java)  
-
-[*二维数组跑马灯1*](src/main/java/week_2/wangwei/marquee/TwoDimensional.java)  
-
-[*二维数组跑马灯2*](src/main/java/week_2/wangwei/marquee/TwoDimensional2.java)  
-
-[*三维数组跑马灯*](src/main/java/week_2/wangwei/marquee/ThreeDimensional.java)  
-
-[**第二周作业聚合版**](src/main/java/week_2/wuyanzhen/Week2.java)  
-
-### Week3  
-
-[**第三周作业1**](src/main/java/week_3/wangwei/MyLinkDemo.java)  
-Code from wangwei  
-
-[**第三周作业2**](src/main/java/week_3/wuyanzhen/Week3.java)  
-Code from wuyanzhen  
-
-[**第三周作业3**](src/main/java/week_3/dqy/Main.java)  
-Code from dqy  
-
-### Contributer  
+### Contributors    
 
 guyuedumingx  
 Florence  
