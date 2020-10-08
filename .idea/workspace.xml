@@ -20,8 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="08caa06f-fd43-46db-9758-420d57b9208d" name="Default Changelist" comment="吴彦臻完成weekfour">
-      <change afterPath="$PROJECT_DIR$/src/main/java/week_4/wangwei/Week4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/week_4/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/week_4/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,7 +168,7 @@
       <workItem from="1599975802793" duration="2066000" />
       <workItem from="1600660844502" duration="49000" />
       <workItem from="1600660932669" duration="18000" />
-      <workItem from="1602170658303" duration="2208000" />
+      <workItem from="1602170658303" duration="2502000" />
     </task>
     <task id="LOCAL-00001" summary="吴彦臻完成weekfour">
       <created>1601708001789</created>
