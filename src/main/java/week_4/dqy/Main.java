@@ -201,10 +201,5 @@ class MyLink {
         }
         this.head.next = pre;
     }
-//
-//    //合并链表
-//    public void merge(MyLink list1, MyLink list2) {
-//
-//    }
 
 }
