@@ -7,4 +7,5 @@ Code from wuyanzhen
 [**第四周作业2**](./wangwei/Week4.java)  
 Code from wangwei  
 
-[**第四周作业3**](./dqu/Week4.java)  
+[**第四周作业3**](./dqy/Main.java)  
+Code from dqy  
