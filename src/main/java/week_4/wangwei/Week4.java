@@ -11,9 +11,9 @@ public class Week4{
     public static void main(String[] args) {
         Character[] nodes = new Character[]{'a','c','a','g','a','a','a','b'};
         link.init(nodes);
-        //prtLink(link);
-        chPos();
-        //prtLink(link);
+        prtLink(link);
+        reverse();
+        prtLink(link);
     }
 
     /**
@@ -216,6 +216,22 @@ public class Week4{
     }
 
     /**
+     * 单链表逆序
+     */
+    public static void reverse(){
+       Node<Character> pre = null;
+       Node<Character> temp = null;
+       Node<Character> cur = link.head.next;
+       while (cur!=null) {
+           temp = cur.next;
+           cur.next = pre;
+           pre = cur;
+           cur = temp;
+       }
+       link.head.next = pre;
+    }
+
+    /**
      * 打印链表
      * @param link
      */
@@ -231,6 +247,7 @@ public class Week4{
         }
         System.out.println();
     }
+
 }
 
 /**
