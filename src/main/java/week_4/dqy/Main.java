@@ -1,13 +1,11 @@
 package week_4.dqy;
 
-import week_4.wuyanzhen.Node;
-
 public class Main {
     public static void main(String[] args) {
         MyLink list = new MyLink();
         MyLink.Node tmp = list.head;
         for (int i = 1; i < 10; i++) {
-            tmp.next = new MyLink.Node(i);
+            tmp.next = new MyLink.Node(i % 2);
             tmp = tmp.next;
         }
         list.searchFromBeginning(list.head.next);
@@ -193,7 +191,7 @@ class MyLink {
     //反转链表
     public void reverse() {
         Node temp, pre = null, cur = this.head.next;
-        while (cur != null){
+        while (cur != null) {
             temp = cur.next;
             cur.next = pre;
             pre = cur;
@@ -201,5 +199,24 @@ class MyLink {
         }
         this.head.next = pre;
     }
+
+    //拆分链表
+    public static MyLink[] splitLink(MyLink oldLink) {
+        MyLink[] newLinks = new MyLink[2];
+        Node cur = oldLink.head.next;
+        while (cur != null) {
+            Node tmp = cur.next;
+            if (cur.data % 2 == 0) {
+                cur.next = newLinks[0].head;
+                newLinks[0].head = cur;
+            } else {
+                cur.next = newLinks[1].head;
+                newLinks[1].head = cur;
+            }
+            cur = tmp;
+        }
+        return newLinks;
+    }
+
 
 }
