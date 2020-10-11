@@ -20,8 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="08caa06f-fd43-46db-9758-420d57b9208d" name="Default Changelist" comment="weak4 submit">
+      <change afterPath="$PROJECT_DIR$/src/main/java/week_5/wuyanzhen/Week5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/DataStruct.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/DataStruct.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/week_4/wangwei/Week4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/week_4/wangwei/Week4.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +39,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\java\Maven\apache-maven-3.6.3-bin\apache-maven-3.6.3\mavenRes" />
+        <option name="userSettingsFile" value="D:\java\Maven\apache-maven-3.6.3-bin\apache-maven-3.6.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="1hRGTtv8fMPKvgshgfuZimDrrqb" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="false" id="更新" />
@@ -52,7 +61,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/week_5/wuyanzhen" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -62,6 +71,9 @@
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Git\DataStruct\src\main\java\week_5\wuyanzhen" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Week4">
@@ -171,6 +183,7 @@
       <workItem from="1600660844502" duration="49000" />
       <workItem from="1600660932669" duration="18000" />
       <workItem from="1602170658303" duration="2502000" />
+      <workItem from="1602402610486" duration="134000" />
     </task>
     <task id="LOCAL-00001" summary="吴彦臻完成weekfour">
       <created>1601708001789</created>
@@ -190,20 +203,19 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="吴彦臻完成weekfour" />
@@ -244,11 +256,11 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="493" height="700" key="DebuggerActiveHint/0.0.1920.1080@0.0.1920.1080" timestamp="1602256520888" />
-    <state x="2606" y="139" key="FileChooserDialogImpl" timestamp="1600660943998">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state x="549" y="110" key="FileChooserDialogImpl" timestamp="1602402713479">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="2606" y="139" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1600660943998" />
-    <state x="549" y="110" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1599975832519" />
+    <state x="549" y="110" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1602402713479" />
     <state width="1850" height="378" key="GridCell.Tab.0.bottom" timestamp="1602257877504">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -289,10 +301,10 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2520" y="217" key="NewModule_or_Project.wizard/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1600660946761" />
-    <state x="270" y="0" key="SettingsEditor" timestamp="1601708246899">
+    <state x="270" y="0" key="SettingsEditor" timestamp="1602402744798">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="270" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1601708246899" />
+    <state x="270" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1602402744798" />
     <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1602175288305">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
