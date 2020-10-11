@@ -19,10 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="08caa06f-fd43-46db-9758-420d57b9208d" name="Default Changelist" comment="weak4 submit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/week_5/wuyanzhen/Week5.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/DataStruct.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/DataStruct.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="08caa06f-fd43-46db-9758-420d57b9208d" name="Default Changelist" comment="finished the Week5">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,6 +69,9 @@
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="week_5.wuyanzhen" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Git\DataStruct\src\main\java\week_5\wuyanzhen" />
@@ -183,7 +184,7 @@
       <workItem from="1600660844502" duration="49000" />
       <workItem from="1600660932669" duration="18000" />
       <workItem from="1602170658303" duration="2502000" />
-      <workItem from="1602402610486" duration="134000" />
+      <workItem from="1602402610486" duration="650000" />
     </task>
     <task id="LOCAL-00001" summary="吴彦臻完成weekfour">
       <created>1601708001789</created>
@@ -199,7 +200,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602175179710</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="finished the Week5">
+      <created>1602402924963</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1602402924963</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -220,7 +228,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="吴彦臻完成weekfour" />
     <MESSAGE value="weak4 submit" />
-    <option name="LAST_COMMIT_MESSAGE" value="weak4 submit" />
+    <MESSAGE value="finished the Week5" />
+    <option name="LAST_COMMIT_MESSAGE" value="finished the Week5" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -305,10 +314,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="270" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1602402744798" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1602175288305">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1602402934465">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1602175288305" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1602402934465" />
     <state width="958" height="520" key="XDebugger.FullValuePopup" timestamp="1599968196007">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
