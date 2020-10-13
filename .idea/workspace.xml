@@ -19,11 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="08caa06f-fd43-46db-9758-420d57b9208d" name="Default Changelist" comment="finished the Week5">
+    <list default="true" id="08caa06f-fd43-46db-9758-420d57b9208d" name="Default Changelist" comment="add to weak4">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/week_4/dqy/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/week_4/dqy/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/week_5/wuyanzhen/FlorenceStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/week_5/wuyanzhen/FlorenceStack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/week_5/wuyanzhen/Week5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/week_5/wuyanzhen/Week5.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -225,7 +222,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602402924963</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add to weak4">
+      <created>1602553405335</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1602553405335</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -248,7 +252,8 @@
     <MESSAGE value="吴彦臻完成weekfour" />
     <MESSAGE value="weak4 submit" />
     <MESSAGE value="finished the Week5" />
-    <option name="LAST_COMMIT_MESSAGE" value="finished the Week5" />
+    <MESSAGE value="add to weak4" />
+    <option name="LAST_COMMIT_MESSAGE" value="add to weak4" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -276,10 +281,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="565" y="168" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1602170977862" />
-    <state x="410" y="6" key="CommitChangelistDialog2" timestamp="1602175279058">
+    <state x="410" y="6" key="CommitChangelistDialog2" timestamp="1602553404320">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="410" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1602175279058" />
+    <state x="410" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1602553404320" />
     <state width="493" height="700" key="DebuggerActiveHint" timestamp="1602256520888">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
