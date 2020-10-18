@@ -1,5 +1,7 @@
 package week_4.dqy;
 
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
         MyLink list1 = new MyLink();
@@ -20,6 +22,7 @@ public class Main {
         System.out.println();
         MyLink ans = MyLink.mergeLink(list1, list2);
         ans.searchFromBeginning(ans.head.next);
+        MyLink.Mul(5);
     }
 }
 
@@ -263,7 +266,42 @@ class MyLink {
     }
 
     //多项式
-//    public int sum() {
-//
-//    }
+    static class MulNode {
+        int radix;
+        int idx;
+        MyLink.MulNode next;
+        public MulNode() {}
+        public MulNode(int radix, int idx) {
+            this.radix = radix;
+            this.idx = idx;
+        }
+    }
+    MulNode mulHead = new MulNode();
+    //一个测试实例的函数
+    //n代表链表长度
+    public static void Mul(int n) {
+        Scanner src = new Scanner(System.in);
+        MyLink mul1 = new MyLink();
+        MulNode tmp = mul1.mulHead;
+        int mx = 0;
+        for (int i = 0; i < n; i++) {
+            int curRadix = src.nextInt();
+            int curIdx = src.nextInt();
+            mx = Math.max(mx, curIdx);
+            MulNode cur = new MulNode(curRadix, curIdx);
+            tmp.next = cur;
+            tmp = cur;
+        }
+        int[] qty = new int[mx + 1];
+        for (int i = 0; i <= mx; i++) qty[i] = 0;
+        tmp = mul1.mulHead.next;
+        while (tmp != null){
+            qty[tmp.idx] += tmp.radix;
+            tmp = tmp.next;
+        }
+        for (int i = mx; i >= 0; i--) {
+            System.out.print(qty[i] + "*n^" + i);
+            if (i != 0) System.out.print(" + ");
+        }
+    }
 }
