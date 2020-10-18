@@ -20,6 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="08caa06f-fd43-46db-9758-420d57b9208d" name="Default Changelist" comment="add to weak6">
+      <change afterPath="$PROJECT_DIR$/src/main/java/week_6/dqy/addtofront/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/week_6/dqy/exCycle/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -103,7 +105,7 @@
       <recent name="D:\Git\DataStruct\src\main\java\week_5\wuyanzhen" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main (5)">
+  <component name="RunManager" selected="Application.Main (2)">
     <configuration name="Factorial" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="week_1.Factorial" />
       <module name="DataStruct" />
@@ -130,12 +132,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main (4)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="week_6.dqy.arange.Main" />
+    <configuration name="Main (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="week_6.dqy.exCycle.Main" />
       <module name="DataStruct" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="week_6.dqy.arange.*" />
+          <option name="PATTERN" value="week_6.dqy.exCycle.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -184,19 +186,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.Factorial" />
-      <item itemvalue="Application.Main (4)" />
       <item itemvalue="Application.Main" />
       <item itemvalue="Application.Main (5)" />
       <item itemvalue="Application.Marquee" />
       <item itemvalue="Application.Main (1)" />
+      <item itemvalue="Application.Main (2)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main (2)" />
         <item itemvalue="Application.Main (5)" />
         <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Marquee" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Main (4)" />
       </list>
     </recent_temporary>
   </component>
@@ -316,7 +318,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603028568245</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="add to weak6">
+      <created>1603028867102</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1603028867102</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -370,10 +379,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="565" y="168" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1602170977862" />
-    <state x="410" y="6" key="CommitChangelistDialog2" timestamp="1603028567806">
+    <state x="410" y="6" key="CommitChangelistDialog2" timestamp="1603028866656">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="410" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1603028567806" />
+    <state x="410" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1603028866656" />
     <state width="493" height="700" key="DebuggerActiveHint" timestamp="1602256520888">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -383,25 +392,25 @@
     </state>
     <state x="2606" y="139" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1600660943998" />
     <state x="549" y="110" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1602402713479" />
-    <state width="1493" height="162" key="GridCell.Tab.0.bottom" timestamp="1603028744688">
+    <state width="1493" height="162" key="GridCell.Tab.0.bottom" timestamp="1603031061252">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="162" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603028744688" />
+    <state width="1493" height="162" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603031061252" />
     <state width="1850" height="378" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1602257877504" />
-    <state width="1493" height="162" key="GridCell.Tab.0.center" timestamp="1603028744688">
+    <state width="1493" height="162" key="GridCell.Tab.0.center" timestamp="1603031061252">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="162" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1603028744688" />
+    <state width="1493" height="162" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1603031061252" />
     <state width="1850" height="378" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1602257877502" />
-    <state width="1493" height="162" key="GridCell.Tab.0.left" timestamp="1603028744688">
+    <state width="1493" height="162" key="GridCell.Tab.0.left" timestamp="1603031061252">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="162" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1603028744688" />
+    <state width="1493" height="162" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1603031061252" />
     <state width="1850" height="378" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1602257877500" />
-    <state width="1493" height="162" key="GridCell.Tab.0.right" timestamp="1603028744688">
+    <state width="1493" height="162" key="GridCell.Tab.0.right" timestamp="1603031061252">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="162" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1603028744688" />
+    <state width="1493" height="162" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1603031061252" />
     <state width="1850" height="378" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1602257877503" />
     <state width="1493" height="155" key="GridCell.Tab.1.bottom" timestamp="1603022907824">
       <screen x="0" y="0" width="1536" height="824" />
@@ -431,10 +440,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="270" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1602402744798" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1603028590628">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1603028872150">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1603028590628" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1603028872150" />
     <state width="958" height="520" key="XDebugger.FullValuePopup" timestamp="1599968196007">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
