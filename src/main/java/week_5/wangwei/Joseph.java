@@ -35,20 +35,25 @@ public class Joseph {
      * 无概率问题
      */
     public static void normal(){
-        int preTag = distant;
-        while(link.head.next!=null){
-            Node<Integer> curNode = link.head;
-            int i = 0;
-            for(;curNode!=null&&curNode.next!=null; i++,curNode=curNode.next){
-                if(i==preTag){
-                    curNode.data = curNode.next.data;
-                    curNode.next = curNode.next.next;
-                    preTag += distant;
+        Node<Integer> cur = link.head;
+        while(link.head.next!=link.head){
+            for (int i=1; i < distant; i++){
+                if(cur.next==link.head){
+                    cur = cur.next.next;
+                }else {
+                    cur = cur.next;
                 }
             }
+            if(cur.next==link.head){
+                cur = cur.next;
+                cur.next = cur.next.next;
+            }else {
+                cur.next = cur.next.next;
+            }
+            cur = cur.next;
             link.prt();
-            preTag = preTag % i;
         }
-        link.prt();
     }
+
+
 }
