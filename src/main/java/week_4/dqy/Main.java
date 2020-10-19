@@ -1,19 +1,25 @@
 package week_4.dqy;
 
-import week_4.wuyanzhen.Node;
-
 public class Main {
     public static void main(String[] args) {
-        MyLink list = new MyLink();
-        MyLink.Node tmp = list.head;
+        MyLink list1 = new MyLink();
+        MyLink.Node tmp1 = list1.head;
         for (int i = 1; i < 10; i++) {
-            tmp.next = new MyLink.Node(i);
-            tmp = tmp.next;
+            tmp1.next = new MyLink.Node(i);
+            tmp1 = tmp1.next;
         }
-        list.searchFromBeginning(list.head.next);
-        list.reverse();
+        MyLink list2 = new MyLink();
+        MyLink.Node tmp2 = list2.head;
+        for (int i = 1; i < 10; i++) {
+            tmp2.next = new MyLink.Node(i);
+            tmp2 = tmp2.next;
+        }
+        list1.searchFromBeginning(list1.head.next);
         System.out.println();
-        list.searchFromBeginning(list.head.next);
+        list1.searchFromBeginning(list2.head.next);
+        System.out.println();
+        MyLink ans = MyLink.mergeLink(list1, list2);
+        ans.searchFromBeginning(ans.head.next);
     }
 }
 
@@ -193,7 +199,7 @@ class MyLink {
     //反转链表
     public void reverse() {
         Node temp, pre = null, cur = this.head.next;
-        while (cur != null){
+        while (cur != null) {
             temp = cur.next;
             cur.next = pre;
             pre = cur;
@@ -202,4 +208,62 @@ class MyLink {
         this.head.next = pre;
     }
 
+    //拆分链表
+    public static MyLink[] splitLink(MyLink oldLink) {
+        MyLink[] newLinks = new MyLink[2];
+        newLinks[0] = new MyLink();
+        newLinks[1] = new MyLink();
+        Node cur = oldLink.head;
+        while (cur != null) {
+            Node tmp = cur.next;
+            if (cur.data % 2 == 0) {
+                Node newTmp = newLinks[0].head;
+                while (newTmp.next != null) {
+                    newTmp = newTmp.next;
+                }
+                cur.next = null;
+                newTmp.next = cur;
+            } else {
+                Node newTmp = newLinks[1].head;
+                while (newTmp.next != null) {
+                    newTmp = newTmp.next;
+                }
+                cur.next = null;
+                newTmp.next = cur;
+            }
+            cur = tmp;
+        }
+        return newLinks;
+    }
+
+    //合并链表
+    public static MyLink mergeLink(MyLink l1, MyLink l2) {
+        MyLink tmp = new MyLink();
+        Node idxL1 = l1.head.next, idxL2 = l2.head.next;
+        Node last = tmp.head;
+        while (idxL1 != null && idxL2 != null) {
+            Node temp1 = idxL1.next,temp2 =idxL2.next;
+            last.next = idxL1;
+            idxL1.next = idxL2;
+            idxL2.next = null;
+            last = idxL2;
+            idxL1 = temp1;
+            idxL2 = temp2;
+        }
+        if (idxL1 != null) {
+            last.next = idxL1;
+            while (last.next != null) {
+                last = last.next;
+            }
+        }
+        if (idxL2 != null) {
+            last.next = idxL2;
+        }
+        return tmp;
+    }
+
+    //多项式
+//    public int sum() {
+//
+//    }
 }
