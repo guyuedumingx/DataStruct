@@ -1,6 +1,9 @@
 package week_4.wangwei;
 
 
+import util.wangwei.MyLink;
+import util.wangwei.Node;
+
 /**
  * 第四周作业
  * @author wangwei
@@ -11,9 +14,9 @@ public class Week4{
     public static void main(String[] args) {
         Character[] nodes = new Character[]{'a','c','a','g','a','a','a','b'};
         link.init(nodes);
-        //prtLink(link);
-        chPos();
-        //prtLink(link);
+        link.prt();
+        reverse();
+        link.prt();
     }
 
     /**
@@ -147,11 +150,11 @@ public class Week4{
         Character[] nodesA = new Character[]{'q','m','h','g','f','d','c','a'};
         MyLink<Character> linkA = new MyLink<Character>();
         linkA.init(nodesA);
-        prtLink(linkA);
+        linkA.prt();
         Character[] nodesB = new Character[]{'r','n','l','k','j','i','f','e'};
         MyLink<Character> linkB = new MyLink<Character>();
         linkB.init(nodesB);
-        prtLink(linkB);
+        linkB.prt();
         Node<Character> p = linkA.head.next;
         Node<Character> q = linkB.head;
 
@@ -167,7 +170,7 @@ public class Week4{
         if(q.next==null){
            q.next = p;
         }
-        prtLink(linkB);
+        linkB.prt();
     }
 
     /**
@@ -177,7 +180,7 @@ public class Week4{
         Integer[] nodes = new Integer[]{1,2,3,4,5,6,7,8,9,10};
         MyLink<Integer> myLink = new MyLink<Integer>();
         myLink.init(nodes);
-        prtLink(myLink);
+        link.prt();
         MyLink<Integer> resA = new MyLink<Integer>();
         MyLink<Integer> resB = new MyLink<Integer>();
         Node<Integer> p = myLink.head.next;
@@ -192,8 +195,8 @@ public class Week4{
             }
             p = p.next;
         }
-        prtLink(resA);
-        prtLink(resB);
+        resA.prt();
+        resB.prt();
     }
 
     /**
@@ -202,7 +205,7 @@ public class Week4{
     public static void chPos(){
         Character[] nodes = new Character[]{'a','b','c','d','e','f','g','h','i'};
         link.init(nodes);
-        prtLink(link);
+        link.prt();
         Node<Character> p = link.head;
         while(p.next!=null&&p.next.next!=null){
             Node<Character> a = p.next;
@@ -212,58 +215,22 @@ public class Week4{
             p.next = b;
             p = a;
         }
-        prtLink(link);
+        link.prt();
     }
 
     /**
-     * 打印链表
-     * @param link
+     * 单链表逆序
      */
-    public static void prtLink(MyLink link){
-        //空链表情况,就是只有一个头指针,头指针的next是null
-        if(link.head.next == null){return;}
-        //指针
-        Node<Character> p = link.head.next;
-        System.out.print("head");
-        while(p!=null){
-            System.out.print(" -> "+p.data);
-            p = p.next;
-        }
-        System.out.println();
+    public static void reverse(){
+       Node<Character> pre = null;
+       Node<Character> temp = null;
+       Node<Character> cur = link.head.next;
+       while (cur!=null) {
+           temp = cur.next;
+           cur.next = pre;
+           pre = cur;
+           cur = temp;
+       }
+       link.head.next = pre;
     }
 }
-
-/**
- * 基本链表
- */
-class MyLink<T> {
-    /**
-     * 头节点
-     */
-    public Node<T> head = new Node<T>();
-
-    /**
-     * 初始化数组
-     * @param list
-     */
-    public void init(T[] list){
-        head.next = null;
-        for (T n : list){
-            Node<T> node = new Node<T>(n);
-            node.next = head.next;
-            head.next = node;
-        }
-    }
-}
-
-/**
- * 节点类
- * @param <T>
- */
-class Node<T> {
-    T data;
-    Node<T> next;
-    public Node(T data){this.data = data;}
-    public Node(){}
-}
-

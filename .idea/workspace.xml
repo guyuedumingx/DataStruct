@@ -20,7 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="08caa06f-fd43-46db-9758-420d57b9208d" name="Default Changelist" comment="add to weak4">
+      <change afterPath="$PROJECT_DIR$/src/main/java/util/wangwei/CircularLink.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/util/wangwei/MyLink.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/util/wangwei/Node.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/week_5/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/week_5/wangwei/Joseph.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/week_4/wangwei/Week4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/week_4/wangwei/Week4.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +66,7 @@
   <component name="ProjectId" id="1hRGTtv8fMPKvgshgfuZimDrrqb" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="false" id="更新" />
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -88,7 +95,7 @@
       <recent name="D:\Git\DataStruct\src\main\java\week_5\wuyanzhen" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.Joseph">
     <configuration name="BubbleSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="BubbleSort" />
       <module name="DataStruct" />
@@ -129,6 +136,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Joseph" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="week_5.wangwei.Joseph" />
+      <module name="DataStruct" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="week_5.wangwei.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="week_4.dqy.Main" />
       <module name="DataStruct" />
@@ -155,31 +175,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="week1Test.FileTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="DataStruct" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="week1Test" />
-      <option name="METHOD_NAME" value="FileTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="Application.Factorial" />
       <item itemvalue="Application.BubbleSort" />
       <item itemvalue="Application.ChickAndHen (1)" />
       <item itemvalue="Application.Week4" />
       <item itemvalue="Application.Main" />
-      <item itemvalue="JUnit.week1Test.FileTest" />
+      <item itemvalue="Application.Joseph" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Joseph" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Week4" />
         <item itemvalue="Application.BubbleSort" />
         <item itemvalue="Application.ChickAndHen (1)" />
-        <item itemvalue="JUnit.week1Test.FileTest" />
       </list>
     </recent_temporary>
   </component>
@@ -199,7 +209,8 @@
       <workItem from="1600660844502" duration="49000" />
       <workItem from="1600660932669" duration="18000" />
       <workItem from="1602170658303" duration="2502000" />
-      <workItem from="1602402610486" duration="650000" />
+      <workItem from="1602747710013" duration="1083000" />
+      <workItem from="1602985157838" duration="4744000" />
     </task>
     <task id="LOCAL-00001" summary="吴彦臻完成weekfour">
       <created>1601708001789</created>
@@ -233,7 +244,7 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -257,130 +268,61 @@
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="358" y="34" key="#Project_Structure" timestamp="1599966780735">
+    <state x="672" y="100" width="561" height="811" key="#com.intellij.ide.util.MemberChooser" timestamp="1602985477732">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="358" y="34" key="#Project_Structure/0.0.1920.1080@0.0.1920.1080" timestamp="1599966780735" />
-    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599977261942">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1599977261942" />
-    <state x="237" y="311" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1599977247712">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="237" y="311" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1536.824@0.0.1536.824" timestamp="1599977247712" />
-    <state x="2560" y="254" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1600660863682">
-      <screen x="1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="2560" y="254" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1600660863682" />
-    <state x="637" y="348" width="642" height="358" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1599966944050">
+    <state x="672" y="100" width="561" height="811" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1602985477732" />
+    <state width="1850" height="529" key="GridCell.Tab.0.bottom" timestamp="1602991591430">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="637" y="348" width="642" height="358" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1080@0.0.1920.1080" timestamp="1599966944050" />
-    <state x="565" y="168" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1602170977862">
+    <state width="1850" height="529" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1602991591430" />
+    <state width="1850" height="529" key="GridCell.Tab.0.center" timestamp="1602991591427">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="565" y="168" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1602170977862" />
-    <state x="410" y="6" key="CommitChangelistDialog2" timestamp="1602553404320">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="410" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1602553404320" />
-    <state width="493" height="700" key="DebuggerActiveHint" timestamp="1602256520888">
+    <state width="1850" height="529" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1602991591427" />
+    <state width="1850" height="529" key="GridCell.Tab.0.left" timestamp="1602991591426">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="493" height="700" key="DebuggerActiveHint/0.0.1920.1080@0.0.1920.1080" timestamp="1602256520888" />
-    <state x="549" y="110" key="FileChooserDialogImpl" timestamp="1602402713479">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="2606" y="139" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1600660943998" />
-    <state x="549" y="110" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1602402713479" />
-    <state width="1493" height="135" key="GridCell.Tab.0.bottom" timestamp="1602519916576">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="135" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1602519916576" />
-    <state width="1850" height="378" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1602257877504" />
-    <state width="1493" height="135" key="GridCell.Tab.0.center" timestamp="1602519916576">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="135" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1602519916576" />
-    <state width="1850" height="378" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1602257877502" />
-    <state width="1493" height="135" key="GridCell.Tab.0.left" timestamp="1602519916576">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="135" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1602519916576" />
-    <state width="1850" height="378" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1602257877500" />
-    <state width="1493" height="135" key="GridCell.Tab.0.right" timestamp="1602519916576">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="135" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1602519916576" />
-    <state width="1850" height="378" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1602257877503" />
-    <state width="1493" height="135" key="GridCell.Tab.1.bottom" timestamp="1602519916576">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="135" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1602519916576" />
-    <state width="1850" height="367" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1602257278430" />
-    <state width="1493" height="135" key="GridCell.Tab.1.center" timestamp="1602519916576">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="135" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1602519916576" />
-    <state width="1850" height="367" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1602257278429" />
-    <state width="1493" height="135" key="GridCell.Tab.1.left" timestamp="1602519916576">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="135" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1602519916576" />
-    <state width="1850" height="367" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1602257278429" />
-    <state width="1493" height="135" key="GridCell.Tab.1.right" timestamp="1602519916576">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="135" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1602519916576" />
-    <state width="1850" height="367" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1602257278430" />
-    <state x="2520" y="217" key="NewModule_or_Project.wizard" timestamp="1600660946761">
-      <screen x="1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="2520" y="217" key="NewModule_or_Project.wizard/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1600660946761" />
-    <state x="270" y="0" key="SettingsEditor" timestamp="1602402744798">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="270" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1602402744798" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1602553376597">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1602553376597" />
-    <state width="958" height="520" key="XDebugger.FullValuePopup" timestamp="1599968196007">
+    <state width="1850" height="529" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1602991591426" />
+    <state width="1850" height="529" key="GridCell.Tab.0.right" timestamp="1602991591429">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="958" height="520" key="XDebugger.FullValuePopup/0.0.1920.1080@0.0.1920.1080" timestamp="1599968196007" />
-    <state x="654" y="11" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1599984561272">
+    <state width="1850" height="529" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1602991591429" />
+    <state width="1850" height="529" key="GridCell.Tab.1.bottom" timestamp="1602991591434">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="654" y="11" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1599984561272" />
-    <state x="361" y="-2" width="808" height="1122" key="search.everywhere.popup" timestamp="1602518314600">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1850" height="529" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1602991591434" />
+    <state width="1850" height="529" key="GridCell.Tab.1.center" timestamp="1602991591432">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="361" y="-2" width="808" height="1122" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1602518314600" />
-    <state x="451" y="-2" width="1009" height="1470" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1602256047821" />
+    <state width="1850" height="529" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1602991591432" />
+    <state width="1850" height="529" key="GridCell.Tab.1.left" timestamp="1602991591431">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1850" height="529" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1602991591431" />
+    <state width="1850" height="529" key="GridCell.Tab.1.right" timestamp="1602991591433">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1850" height="529" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1602991591433" />
+    <state x="277" y="82" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1602743498342">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="277" y="82" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1602743498342" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/week_1/ChickAndHen.java</url>
-          <line>91</line>
-          <option name="timeStamp" value="7" />
+          <url>file://$PROJECT_DIR$/src/main/java/util/wangwei/MyLink.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
-        <watch expression="cur.next" language="JAVA" />
-        <watch expression="newLinks[1].head.next.next.next" />
-        <watch expression="newLinks[1].head.next.next.next.next.next.next.next.next.next" />
+        <watch expression="head.next.next.next.next.next.next.next" />
       </configuration>
     </watches-manager>
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/DataStruct$Week4.ic" NAME="Week4 Coverage Results" MODIFIED="1602249458598" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>week_4.wangwei.*</FILTER>
-    </SUITE>
   </component>
 </project>
