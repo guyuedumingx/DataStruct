@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="da8dc4d5-75c4-4bf9-b69e-8671e7423738" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/util/wangwei/CircularLink.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/util/wangwei/MyLink.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/util/wangwei/MyQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/util/wangwei/MyStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/util/wangwei/Node.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/week_5/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/week_5/wangwei/BracketPair.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/week_5/wangwei/Joseph.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/week_5/wangwei/Palindrome.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/week_4/wangwei/Week4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/week_4/wangwei/Week4.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="false" id="更新" />
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1850" height="123" key="GridCell.Tab.0.bottom" timestamp="1603101554014">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1850" height="123" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1603101554014" />
+    <state width="1850" height="123" key="GridCell.Tab.0.center" timestamp="1603101554011">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1850" height="123" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1603101554011" />
+    <state width="1850" height="123" key="GridCell.Tab.0.left" timestamp="1603101554010">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1850" height="123" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1603101554010" />
+    <state width="1850" height="123" key="GridCell.Tab.0.right" timestamp="1603101554012">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1850" height="123" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1603101554012" />
+    <state width="1850" height="123" key="GridCell.Tab.1.bottom" timestamp="1603101554018">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1850" height="123" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1603101554018" />
+    <state width="1850" height="123" key="GridCell.Tab.1.center" timestamp="1603101554016">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1850" height="123" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1603101554016" />
+    <state width="1850" height="123" key="GridCell.Tab.1.left" timestamp="1603101554015">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1850" height="123" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1603101554015" />
+    <state width="1850" height="123" key="GridCell.Tab.1.right" timestamp="1603101554017">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1850" height="123" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1603101554017" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="head.next.next.next.next.next.next.next" />
+      </configuration>
+    </watches-manager>
+  </component>
+</project>
