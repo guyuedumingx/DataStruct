@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="16ab5eff-3087-417c-abef-17ec020c7c58" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/week_5/wangwei/BothWayLink.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/week_5/wangwei/BubbleLink.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/week_5/wangwei/OddEvenLink.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/util/wangwei/MyLink.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/wangwei/MyLink.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/week_5/wangwei/BracketPair.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/week_6/wangwei/BracketPair.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/week_5/wangwei/Palindrome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/week_6/wangwei/Palindrome.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/week_5/wuyanzhen/FlorenceStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/week_5/wuyanzhen/FlorenceStack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/week_5/wuyanzhen/Week5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/week_5/wuyanzhen/Week5.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +93,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1603102708831</updated>
-      <workItem from="1603102712749" duration="11734000" />
+      <workItem from="1603102712749" duration="12754000" />
     </task>
     <servers />
   </component>
