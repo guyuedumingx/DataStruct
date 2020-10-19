@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="da8dc4d5-75c4-4bf9-b69e-8671e7423738" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/util/wangwei/CircularLink.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/util/wangwei/MyLink.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/util/wangwei/MyQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/util/wangwei/MyStack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/util/wangwei/Node.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/week_5/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/week_5/wangwei/BracketPair.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/week_5/wangwei/Joseph.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/week_5/wangwei/Palindrome.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/week_4/wangwei/Week4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/week_4/wangwei/Week4.java" afterDir="false" />
-    </list>
+    <list default="true" id="da8dc4d5-75c4-4bf9-b69e-8671e7423738" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
