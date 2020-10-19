@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="da8dc4d5-75c4-4bf9-b69e-8671e7423738" name="Default Changelist" comment="" />
+    <list default="true" id="16ab5eff-3087-417c-abef-17ec020c7c58" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +14,27 @@
     <OptionsSetting value="false" id="更新" />
     <ConfirmationsSetting value="2" id="Add" />
   </component>
+  <component name="RunManager">
+    <configuration name="week_6 in DataStruct" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DataStruct" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="week_6.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="week_6" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.week_6 in DataStruct" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -21,22 +42,22 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1850" height="123" key="GridCell.Tab.0.bottom" timestamp="1603101554014">
+    <state width="1850" height="154" key="GridCell.Tab.0.bottom" timestamp="1603102274571">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1850" height="123" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1603101554014" />
-    <state width="1850" height="123" key="GridCell.Tab.0.center" timestamp="1603101554011">
+    <state width="1850" height="154" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1603102274571" />
+    <state width="1850" height="154" key="GridCell.Tab.0.center" timestamp="1603102274570">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1850" height="123" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1603101554011" />
-    <state width="1850" height="123" key="GridCell.Tab.0.left" timestamp="1603101554010">
+    <state width="1850" height="154" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1603102274570" />
+    <state width="1850" height="154" key="GridCell.Tab.0.left" timestamp="1603102274570">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1850" height="123" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1603101554010" />
-    <state width="1850" height="123" key="GridCell.Tab.0.right" timestamp="1603101554012">
+    <state width="1850" height="154" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1603102274570" />
+    <state width="1850" height="154" key="GridCell.Tab.0.right" timestamp="1603102274571">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1850" height="123" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1603101554012" />
+    <state width="1850" height="154" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1603102274571" />
     <state width="1850" height="123" key="GridCell.Tab.1.bottom" timestamp="1603101554018">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
