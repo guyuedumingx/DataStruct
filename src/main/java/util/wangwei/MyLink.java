@@ -17,10 +17,17 @@ public class MyLink<T> {
             node.next = head.next;
             head.next = node;
         }
-
         /**
-         * 初始化数组
-         * @param list
+         * 头插法
+         */
+        public void add(Node<T> node){
+            node.next = head.next;
+            head.next = node;
+        }
+
+    /**
+     * 初始化数组
+     * @param list
          */
         public void init(T[] list){
             head.next = null;

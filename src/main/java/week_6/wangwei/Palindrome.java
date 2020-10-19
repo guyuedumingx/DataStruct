@@ -1,4 +1,4 @@
-package week_5.wangwei;
+package week_6.wangwei;
 
 import util.wangwei.MyStack;
 
