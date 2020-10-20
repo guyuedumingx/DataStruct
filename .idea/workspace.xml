@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="16ab5eff-3087-417c-abef-17ec020c7c58" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/week_7/wangwei/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -34,13 +35,26 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
   </component>
-  <component name="RunManager" selected="Application.OddEvenLink">
+  <component name="RunManager" selected="Application.Calculator2">
     <configuration name="BubbleLink" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="week_5.wangwei.BubbleLink" />
       <module name="DataStruct" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="week_5.wangwei.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Calculator2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="week_6.wangwei.Calculator2" />
+      <module name="DataStruct" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="week_6.wangwei.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -77,6 +91,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Calculator2" />
         <item itemvalue="Application.OddEvenLink" />
         <item itemvalue="Application.BubbleLink" />
         <item itemvalue="JUnit.week_6 in DataStruct" />
@@ -93,7 +108,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1603102708831</updated>
-      <workItem from="1603102712749" duration="12754000" />
+      <workItem from="1603102712749" duration="13130000" />
+      <workItem from="1603166273048" duration="2072000" />
     </task>
     <servers />
   </component>
@@ -105,41 +121,41 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="538" height="672" key="DebuggerActiveHint/0.0.1920.1080@0.0.1920.1080" timestamp="1603115062640" />
-    <state width="1850" height="118" key="GridCell.Tab.0.bottom" timestamp="1603115292793">
+    <state width="1850" height="320" key="GridCell.Tab.0.bottom" timestamp="1603118058733">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1850" height="118" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1603115292793" />
-    <state width="1850" height="118" key="GridCell.Tab.0.center" timestamp="1603115292792">
+    <state width="1850" height="320" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1603118058733" />
+    <state width="1850" height="320" key="GridCell.Tab.0.center" timestamp="1603118058732">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1850" height="118" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1603115292792" />
-    <state width="1850" height="118" key="GridCell.Tab.0.left" timestamp="1603115292792">
+    <state width="1850" height="320" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1603118058732" />
+    <state width="1850" height="320" key="GridCell.Tab.0.left" timestamp="1603118058731">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1850" height="118" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1603115292792" />
-    <state width="1850" height="118" key="GridCell.Tab.0.right" timestamp="1603115292792">
+    <state width="1850" height="320" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1603118058731" />
+    <state width="1850" height="320" key="GridCell.Tab.0.right" timestamp="1603118058732">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1850" height="118" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1603115292792" />
-    <state width="1850" height="320" key="GridCell.Tab.1.bottom" timestamp="1603115115045">
+    <state width="1850" height="320" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1603118058732" />
+    <state width="1850" height="320" key="GridCell.Tab.1.bottom" timestamp="1603118058735">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1850" height="320" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1603115115045" />
-    <state width="1850" height="320" key="GridCell.Tab.1.center" timestamp="1603115115045">
+    <state width="1850" height="320" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1603118058735" />
+    <state width="1850" height="320" key="GridCell.Tab.1.center" timestamp="1603118058734">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1850" height="320" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1603115115045" />
-    <state width="1850" height="320" key="GridCell.Tab.1.left" timestamp="1603115115045">
+    <state width="1850" height="320" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1603118058734" />
+    <state width="1850" height="320" key="GridCell.Tab.1.left" timestamp="1603118058733">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1850" height="320" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1603115115045" />
-    <state width="1850" height="320" key="GridCell.Tab.1.right" timestamp="1603115115045">
+    <state width="1850" height="320" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1603118058733" />
+    <state width="1850" height="320" key="GridCell.Tab.1.right" timestamp="1603118058734">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1850" height="320" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1603115115045" />
-    <state x="451" y="-2" width="1009" height="1470" key="search.everywhere.popup" timestamp="1603116125943">
+    <state width="1850" height="320" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1603118058734" />
+    <state x="451" y="-2" width="1009" height="1470" key="search.everywhere.popup" timestamp="1603167650601">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="451" y="-2" width="1009" height="1470" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1603116125943" />
+    <state x="451" y="-2" width="1009" height="1470" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1603167650601" />
   </component>
 </project>
