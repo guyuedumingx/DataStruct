@@ -4,11 +4,11 @@
 
 根据一串字母如(BDCAE),将其还原成(ABCDE)形式  
 
-**解法**  
+[**解法**](./wangwei/Restore.java)    
 > 使用两个栈,一个存放主要字母StackA,一个暂时用来调换顺序StackB   
 
 1. 依次读取字母,首先将第一个字母(B)存入栈StackA  
-2. 读取第二个字母(D),因为D比A大,将字母B存入StackB  
+2. 读取第二个字母(D),因为D比B大,将字母B存入StackB  
 3. 将D存入StackA,将B存回StackA     
 4. 读取C,C比B大,将B存入Stack  
 5. C比D小,将C存入StackA,将B存回StackA  
@@ -16,6 +16,26 @@
 
 > 此解法非韩冬解法  
 
+*代码实现*  
+```java
+public static String restore(String str){
+    char[] chars = str.toCharArray();
+    for(char ch : chars){
+        while (stackA.peek()!=null&&stackA.peek()<ch){
+            stackB.push(stackA.pop());
+        }
+        stackA.push(ch);
+        while (!stackB.isEmpty()){
+            stackA.push(stackB.pop());
+        }
+    }
+    StringBuilder sb = new StringBuilder();
+    while (!stackA.isEmpty()){
+        sb.append(stackA.pop());
+    }
+    return sb.toString();
+}
+```
 
 #### 模拟收银台  
 
