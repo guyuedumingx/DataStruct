@@ -16,8 +16,7 @@ class CycleList {
         CycleList.Node next;
 
         //无参构造
-        public Node() {
-        }
+        public Node() {}
 
         //有参构造
         public Node(int data) {

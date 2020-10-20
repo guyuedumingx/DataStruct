@@ -34,4 +34,10 @@ class MyStack {
         if (head.next != null)
             head.next = head.next.next;
     }
+
+    //判断栈是否为空
+    public boolean isEmpty() {
+        if (head.next != null) return false;
+        else return true;
+    }
 }

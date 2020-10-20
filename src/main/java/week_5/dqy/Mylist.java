@@ -38,6 +38,16 @@ class MyList {
         return len;
     }
 
+    public int getLast() {
+        Node tmp = this.head.next;
+        int len = 0;
+        while (tmp != null) {
+            len++;
+            tmp = tmp.next;
+        }
+        return len;
+    }
+
     //获取第n个结点
     public Node getNthNode(int idx) {
         Node tmp = this.head;
@@ -95,6 +105,7 @@ class MyList {
         Node cur = this.head;
         int i = 1;
         while (cur.next != null) {
+            //判断当前数据是奇数还是偶数
             if (cur.next.data % 2 == 0) {
                 Node temp = this.deleteNode(i);
                 tmp.addForward(temp);
@@ -104,6 +115,18 @@ class MyList {
         }
         cur.next = tmp.head.next;
         tmp.head = null;
+    }
+
+    //将奇前偶后链表还原
+    public MyList turnBack() {
+        //创建一个新的链表
+        MyList newList = new MyList();
+        if (this.head.next == null) return newList;
+        Node even = this.head;
+        Node odd = this.head;
+        //找到尾部结点
+        
+        return newList;
     }
 
     //约瑟夫环

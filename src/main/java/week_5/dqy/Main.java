@@ -17,9 +17,12 @@ public class Main {
 //        list1.printList();
 //        System.out.println();
         //奇前偶后
-//        list1.turnList();
-//        list1.printList();
-//        System.out.println();
+        list1.turnList();
+        list1.printList();
+        System.out.println();
+        MyList list2 = list1.turnBack();
+        list2.printList();
+        System.out.println();
         //约瑟夫环
 //        MyList cycleList = MyList.makeCycle(100);
 //        int ans = cycleList.weedOut(100, 3);
