@@ -18,6 +18,9 @@
 [**Week_6**](./src/main/java/week_6)  
 存放第六周作业    
 
+[**Week_7**](./src/main/java/week_7)  
+存放第七周作业    
+
 ### Contributors    
 
 guyuedumingx  
