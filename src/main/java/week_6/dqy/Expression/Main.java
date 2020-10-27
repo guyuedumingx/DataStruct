@@ -14,6 +14,8 @@ public class Main {
 
 class Exp {
 
+    static int[] idx = new int[128];
+    static int[][] theMap = new int[128][];
     public static int cal(String exp) {
         int cur = 0;
         MyStack num = new MyStack();
@@ -53,5 +55,23 @@ class Exp {
             }
         }
         return num.getTop();
+    }
+
+    public static void createIdx() {
+        idx['+'] = 0;
+        idx['-'] = 1;
+        idx['*'] = 2;
+        idx['/'] = 3;
+        idx['('] = 4;
+        idx[')'] = 5;
+        idx['#'] = 6;
+    }
+
+    public static void createMap() {
+
+    }
+
+    public static String turn() {
+
     }
 }
