@@ -44,7 +44,7 @@ public static String restore(String str){
 每个人在收银台付钱的时间服从(theta=2)的指数分布  
 一直重复下去,直到队伍满20人或者队伍空  
 
-**解法**  
+[**解法**](./wangwei/CashierDesk.java)    
 
 #### 分割单词  
 
@@ -53,3 +53,6 @@ public static String restore(String str){
 
 **解法**  
 
+-------  
+
+[**第七周集合**](./wuyanzhen/Week7.java)  

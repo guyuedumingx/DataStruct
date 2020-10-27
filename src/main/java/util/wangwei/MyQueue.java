@@ -7,6 +7,7 @@ package util.wangwei;
  */
 public class MyQueue<T> {
    MyLink<T> link = new MyLink<T>();
+   int length = 0;
 
     /**
      * 插入
@@ -18,6 +19,7 @@ public class MyQueue<T> {
            cur = cur.next;
        }
        cur.next = new Node<T>(data);
+       length++;
    }
 
    /**
@@ -31,6 +33,7 @@ public class MyQueue<T> {
        }else {
            data = link.head.next.data;
            link.head.next = link.head.next.next;
+           length--;
        }
        return data;
    }
@@ -53,5 +56,13 @@ public class MyQueue<T> {
        }else {
            return link.head.next.data;
        }
+   }
+
+    /**
+     * 获取长度
+     * @return
+     */
+   public int getSize(){
+       return length;
    }
 }
