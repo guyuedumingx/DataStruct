@@ -72,6 +72,6 @@ class Exp {
     }
 
     public static String turn() {
-
+        return null;
     }
 }
