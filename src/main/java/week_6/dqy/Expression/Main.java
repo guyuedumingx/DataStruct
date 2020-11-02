@@ -14,8 +14,6 @@ public class Main {
 
 class Exp {
 
-    static int[] idx = new int[128];
-    static int[][] theMap = new int[128][];
     public static int cal(String exp) {
         int cur = 0;
         MyStack num = new MyStack();
@@ -57,7 +55,8 @@ class Exp {
         return num.getTop();
     }
 
-    public static void createIdx() {
+    public static int[] createIdx() {
+        int[] idx = new int[128];
         idx['+'] = 0;
         idx['-'] = 1;
         idx['*'] = 2;
@@ -65,13 +64,51 @@ class Exp {
         idx['('] = 4;
         idx[')'] = 5;
         idx['#'] = 6;
+        return idx;
     }
 
-    public static void createMap() {
-
+    public static int[][] createMap() {
+        int[][] map = new int[][]{
+                {1, 1, -1, -1, -1, 1, 1},
+                {1, 1, -1, -1, -1, 1, 1},
+                {1, 1, 1, 1, -1, 1, 1},
+                {1, 1, 1, 1, -1, 1, 1},
+                {-1, -1, -1, -1, -1, 0, 1},
+                {1, 1, 1, 1, 1, 1, 1},
+                {-1, -1, -1, -1, -1, -1, 0},
+        };
+        return map;
     }
 
-    public static String turn() {
+    public static String turn(String exp) {
+        String newExp = "";
+        char[] expression = exp.toCharArray();
+        for (int i = 0; i < expression.length; i++) {
+            MyStack st = new MyStack();
+            String num = "";
+            if (expression[i] <= '9' && expression[i] >= '0') {
+                num += expression[i];
+            } else {
+                if (!num.equals("")) {
+                    newExp += num + " ";
+                }
+                if (expression[i] == '+') {
+                    int cur = st.getTop();
+                } else if (expression[i] == '-') {
+                    
+                } else if (expression[i] == '*') {
 
+                } else if (expression[i] == '/') {
+
+                } else if (expression[i] == '(') {
+
+                } else if (expression[i] == ')') {
+
+                } else if (expression[i] == '#') {
+
+                }
+            }
+        }
+        return newExp;
     }
 }

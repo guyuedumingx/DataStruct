@@ -10,8 +10,11 @@ public class Main {
             list.addToBack(newNode);
         }
         list.printList();
+        //添加的位置在范围内
         while (idx < 100) {
+            //减去最后的结点
             MyList.Node lastNode = list.deleteNode(100);
+            //添加到相应的结点后
             MyList.Node nthNode = list.getNthNode(idx);
             lastNode.next = nthNode.next;
             nthNode.next = lastNode;
