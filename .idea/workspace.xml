@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a777887-01ce-432c-927f-2b7d56395563" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/week_8/wangwei/BuildTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/week_8/wangwei/BuildTree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/week_8/wangwei/SearchTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/week_8/wangwei/SearchTree.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -81,7 +80,7 @@
       <updated>1604318006037</updated>
       <workItem from="1604318007338" duration="4057000" />
       <workItem from="1604323840614" duration="1435000" />
-      <workItem from="1604328280073" duration="4204000" />
+      <workItem from="1604328280073" duration="4631000" />
     </task>
     <servers />
   </component>

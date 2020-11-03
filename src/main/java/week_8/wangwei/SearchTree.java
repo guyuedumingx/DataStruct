@@ -1,6 +1,7 @@
 package week_8.wangwei;
 
 import util.wangwei.MyQueue;
+import util.wangwei.MyStack;
 import util.wangwei.TreeNode;
 
 
@@ -66,6 +67,35 @@ public class SearchTree {
     }
 
     public void midSearchNoRecursion(TreeNode root){
-         
+        if(root==null){return;}
+        MyStack<TreeNode> stack = new MyStack<TreeNode>();
+        TreeNode node = root;
+        while (!stack.isEmpty()){
+            if(node.getLeft()!=null){
+                stack.push(node.getLeft());
+            }
+            System.out.println(node.getValue());
+            if(node.getRight()!=null){
+                stack.push(node.getRight());
+            }
+            node = stack.pop();
+        }
+
+    }
+    public void sufSearchNoRecursion(TreeNode root){
+        if(root==null){return;}
+        MyStack<TreeNode> stack = new MyStack<TreeNode>();
+        TreeNode node = root;
+        while (!stack.isEmpty()){
+            if(node.getLeft()!=null){
+                stack.push(node.getLeft());
+            }
+            if(node.getRight()!=null){
+                stack.push(node.getRight());
+            }
+            System.out.println(node.getValue());
+            node = stack.pop();
+        }
+
     }
 }
