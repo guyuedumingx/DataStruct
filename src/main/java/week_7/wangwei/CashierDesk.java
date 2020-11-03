@@ -22,7 +22,7 @@ public class CashierDesk {
             for(int i=0; i<addNumber&&queue.getSize()<20; i++){
                 queue.offer(new People());
             }
-        }while (queue.isEmpty()||queue.getSize()<20);
+        }while (!queue.isEmpty()&&queue.getSize()<20);
         System.out.println(queue.getSize());
     }
 
