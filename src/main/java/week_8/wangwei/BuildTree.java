@@ -12,6 +12,11 @@ public class BuildTree {
         TreeNode build = build(10);
     }
 
+    /**
+     * 层序建立二叉树
+     * @param length
+     * @return
+     */
     public static TreeNode build(int length){
         if(length<1){
             return null;

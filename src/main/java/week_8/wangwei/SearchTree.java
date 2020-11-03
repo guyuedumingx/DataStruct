@@ -10,6 +10,10 @@ import util.wangwei.TreeNode;
  */
 public class SearchTree {
 
+    /**
+     * 层序遍历
+     * @param root
+     */
     public void bfs(TreeNode root){
         MyQueue<TreeNode> queue = new MyQueue<TreeNode>();
         queue.offer(root);
@@ -24,5 +28,44 @@ public class SearchTree {
                 queue.offer(poll.getRight());
             }
         }
+    }
+
+    /**
+     * 先序遍历
+     * @param node
+     */
+    public void preSearch(TreeNode node){
+        if (node==null){
+            return;
+        }
+        System.out.println(node.getValue());
+        preSearch(node.getLeft());
+        preSearch(node.getRight());
+    }
+
+    /**
+     * 中序遍历
+     * @param node
+     */
+    public void midSearch(TreeNode node){
+        if(node==null){return;}
+        midSearch(node.getLeft());
+        System.out.println(node.getValue());
+        midSearch(node.getRight());
+    }
+
+    /**
+     * 后序遍历
+     * @param node
+     */
+    public void sufSearch(TreeNode node){
+        if(node==null){return;}
+        sufSearch(node.getLeft());
+        sufSearch(node.getRight());
+        System.out.println(node.getValue());
+    }
+
+    public void midSearchNoRecursion(TreeNode root){
+         
     }
 }
