@@ -2,7 +2,27 @@ package week_6.dqy.addtofront;
 
 public class Main {
     public static void main(String[] args) {
-
+        int idx = 1, add = 2;
+        MyList list = new MyList();
+        MyList.Node cur = list.head;
+        for (int i = 1; i <= 100; i++) {
+            MyList.Node newNode = new MyList.Node(i);
+            list.addToBack(newNode);
+        }
+        list.printList();
+        //添加的位置在范围内
+        while (idx < 100) {
+            //减去最后的结点
+            MyList.Node lastNode = list.deleteNode(100);
+            //添加到相应的结点后
+            MyList.Node nthNode = list.getNthNode(idx);
+            lastNode.next = nthNode.next;
+            nthNode.next = lastNode;
+            idx += add;
+            add++;
+        }
+        System.out.println();
+        list.printList();
     }
 }
 
@@ -21,7 +41,8 @@ class MyList {
         }
     }
 
-    MyList.Node head = new MyList.Node();
+    public MyList.Node head = new MyList.Node();
+    public MyList.Node last = head;
 
     //输出链表
     public void printList() {
@@ -78,6 +99,15 @@ class MyList {
     public void addForward(MyList.Node v) {
         v.next = head.next;
         head.next = v;
+    }
 
+    //尾部添加
+    public void addToBack(MyList.Node v) {
+        Node tmp = this.head;
+        while (tmp.next != null) {
+            tmp = tmp.next;
+        }
+        last = v;
+        tmp.next = v;
     }
 }

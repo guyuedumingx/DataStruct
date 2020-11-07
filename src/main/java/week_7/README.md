@@ -44,7 +44,7 @@ public static String restore(String str){
 每个人在收银台付钱的时间服从(theta=2)的指数分布  
 一直重复下去,直到队伍满20人或者队伍空  
 
-**解法**  
+[**解法**](./wangwei/CashierDesk.java)    
 
 #### 分割单词  
 
@@ -53,3 +53,14 @@ public static String restore(String str){
 
 **解法**  
 
+*保留字*  
+
+| 类型             | 保留字                                                                                                             |
+|------------------|--------------------------------------------------------------------------------------------------------------------|
+| 类型说明保留字   | `int`,`long`,`short`,`float`,`double`,`char`,`unsigned`,`signed`,`const`,`void`,`volatile`,`enum`,`struct`,`union` |
+| 语句定义保留字   | `if`,`else`,`goto`,`switch`,`case`,`do`,`while`,`for`,`continue`,`break`,`return`,`default`,`typedef`              |
+| 存储类说明保留字 | `auto`,`register`,`extern`,`static`                                                                                |
+| 长度运算符保留字 | `sizeof`                                                                                                           |
+-------  
+
+[**第七周集合**](./wuyanzhen/Week7.java)  

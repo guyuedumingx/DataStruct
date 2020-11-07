@@ -1,5 +1,7 @@
 package week_6.wuyanzhen;
 
+import util.wuyanzhen.FlorenceStack;
+
 import java.io.*;
 import java.util.*;
 
@@ -29,7 +31,7 @@ public class Week6 {
 //        isMatch("{{{{{{{{}}}}}}[][][][][]]");
 //          judgeAllPermutationIsFix(5);
 //        System.out.println(isPalindromeByStack("aacscana"));
-        long calculator = calculator("(3-2)+5+(4*3)");
+        long calculator = calculator("(1+2*1)*2");
         System.out.println(calculator);
 
     }
@@ -161,7 +163,7 @@ public class Week6 {
      */
     public static void permutationByList(int length) {
         Integer[] integerArr = getIntegerArr(length);
-        LinkedList<Integer> list = new LinkedList<>(Arrays.asList(integerArr));
+        LinkedList<Integer> list = new LinkedList<Integer>(Arrays.asList(integerArr));
         for (Integer integer : list) {
             dfs(integer + "", getListExpectN(list, integer));
         }
@@ -188,31 +190,31 @@ public class Week6 {
         return resList;
     }
 
-    /**
-     * 100个节点，倒数第一插入到第一个节点后面，倒数第二插入到第三个的后面，倒数第三插入到插入到第六个
-     *
-     * @param node 要操作的链表
-     * @param <T>  具体的data域
-     */
-    public static <T> void listManipulate(Node<T> node, int size) {
-        Node<T> head = node;
-        node = node.next;
-        Node<T> inverseList = newInverseList(node).next;
-        int left = 1;
-        int right = size;
-        int count = 2;
-        while (left < right) {
-            insertNode(node, new Node<>(inverseList.data));
-            count++;
-            node = jumpStep(node, count);
-            inverseList = inverseList.next;
-            right--;
-            left += (count - 1);
-            count++;
-        }
-        head = cutSize(head, size);
-        showListBeforeRecursion(head);
-    }
+//    /**
+//     * 100个节点，倒数第一插入到第一个节点后面，倒数第二插入到第三个的后面，倒数第三插入到插入到第六个
+//     *
+//     * @param node 要操作的链表
+//     * @param <T>  具体的data域
+//     */
+//    public static <T> void listManipulate(Node<T> node, int size) {
+//        Node<T> head = node;
+//        node = node.next;
+//        Node<T> inverseList = newInverseList(node).next;
+//        int left = 1;
+//        int right = size;
+//        int count = 2;
+//        while (left < right) {
+//            insertNode(node, new Node<>(inverseList.data));
+//            count++;
+//            node = jumpStep(node, count);
+//            inverseList = inverseList.next;
+//            right--;
+//            left += (count - 1);
+//            count++;
+//        }
+//        head = cutSize(head, size);
+//        showListBeforeRecursion(head);
+//    }
 
     /**
      * 括号匹配
@@ -402,8 +404,8 @@ public class Week6 {
     }
 
     public static long calculator(String wantToCalculateStr) throws Exception {
-        FlorenceStack<Integer> valStack = new FlorenceStack<>();
-        FlorenceStack<Character> operateStack = new FlorenceStack<>();
+        FlorenceStack<Integer> valStack = new FlorenceStack<Integer>();
+        FlorenceStack<Character> operateStack = new FlorenceStack<Character>();
         int temp = 0;
         wantToCalculateStr += '#';
         operateStack.push('#');
@@ -530,27 +532,27 @@ public class Week6 {
         return stringBuilder.toString();
     }
 
-    /**
-     * 剪切size大小的数组
-     *
-     * @param head 头节点
-     * @param size 大小
-     * @param <T>  泛型
-     * @return 返回切割后的头节点
-     */
-    private static <T> Node<T> cutSize(Node<T> head, int size) {
-        Node<T> node = new Node<>();
-        head = head.next;
-        Node<T> newHead = node;
-        int count = 0;
-        while (count < size && head != null) {
-            node.next = new Node<>(head.data);
-            node = node.next;
-            head = head.next;
-            count++;
-        }
-        return newHead;
-    }
+//    /**
+//     * 剪切size大小的数组
+//     *
+//     * @param head 头节点
+//     * @param size 大小
+//     * @param <T>  泛型
+//     * @return 返回切割后的头节点
+//     */
+//    private static <T> Node<T> cutSize(Node<T> head, int size) {
+//        Node<T> node = new Node<>();
+//        head = head.next;
+//        Node<T> newHead = node;
+//        int count = 0;
+//        while (count < size && head != null) {
+//            node.next = new Node<>(head.data);
+//            node = node.next;
+//            head = head.next;
+//            count++;
+//        }
+//        return newHead;
+//    }
 
     /**
      * 根据步数跳获取这个节点下一个节点
@@ -583,53 +585,53 @@ public class Week6 {
     }
 
 
-    public static <T> Node<T> newInverseList(Node<T> head) {
-        Node<T> newHead = new Node<>();
-        head = head.next;
-        while (head != null) {
-            Node<T> tempNode = new Node<>(head.data);
-            tempNode.next = newHead.next;
-            newHead.next = tempNode;
-            head = head.next;
-        }
-        return newHead;
-    }
-
-
-    /**
-     * 获取链表
-     * 尾插法
-     *
-     * @param <T>  链表含有的参数
-     * @param data 数据
-     * @return 返回头节点
-     */
-    public static <T> Node getRightOrderList(T[] data) {
-        Node<T> head = new Node<>();
-        Node<T> nowNode = head;
-        int count = 0;
-        while (count < data.length) {
-            Node<T> newNode = new Node<>(data[count]);
-            nowNode.next = newNode;
-            nowNode = newNode;
-            count++;
-        }
-        return head;
-    }
-
-    /**
-     * 正序递归遍历
-     *
-     * @param head 头指针
-     * @param <T>  泛型参数
-     */
-    public static <T> void showListBeforeRecursion(Node<T> head) {
-        if (head == null) {
-            return;
-        }
-        if (head.data != null) {
-            System.out.println(head.data);
-        }
-        showListBeforeRecursion(head.next);
-    }
+//    public static <T> Node<T> newInverseList(Node<T> head) {
+//        Node<T> newHead = new Node<>();
+//        head = head.next;
+//        while (head != null) {
+//            Node<T> tempNode = new Node<>(head.data);
+//            tempNode.next = newHead.next;
+//            newHead.next = tempNode;
+//            head = head.next;
+//        }
+//        return newHead;
+//    }
+//
+//
+//    /**
+//     * 获取链表
+//     * 尾插法
+//     *
+//     * @param <T>  链表含有的参数
+//     * @param data 数据
+//     * @return 返回头节点
+//     */
+//    public static <T> Node getRightOrderList(T[] data) {
+//        Node<T> head = new Node<>();
+//        Node<T> nowNode = head;
+//        int count = 0;
+//        while (count < data.length) {
+//            Node<T> newNode = new Node<>(data[count]);
+//            nowNode.next = newNode;
+//            nowNode = newNode;
+//            count++;
+//        }
+//        return head;
+//    }
+//
+//    /**
+//     * 正序递归遍历
+//     *
+//     * @param head 头指针
+//     * @param <T>  泛型参数
+//     */
+//    public static <T> void showListBeforeRecursion(Node<T> head) {
+//        if (head == null) {
+//            return;
+//        }
+//        if (head.data != null) {
+//            System.out.println(head.data);
+//        }
+//        showListBeforeRecursion(head.next);
+//    }
 }
