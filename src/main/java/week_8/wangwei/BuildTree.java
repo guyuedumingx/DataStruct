@@ -24,7 +24,7 @@ public class BuildTree {
         MyQueue<TreeNode> queue = new MyQueue<TreeNode>();
         TreeNode<Integer> root = new TreeNode<Integer>(1);
         queue.offer(root);
-        for(int i=2; i<length; i++){
+        for(int i=2; i<=length; i++){
             TreeNode poll = queue.peek();
             TreeNode<Integer> node = new TreeNode<Integer>(i);
             if(poll.getLeft()==null){
