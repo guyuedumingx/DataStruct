@@ -1,8 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="6a777887-01ce-432c-927f-2b7d56395563" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/week_8/wangwei/SearchTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/week_8/wangwei/SearchTree.java" afterDir="false" />
+    <list default="true" id="16ab5eff-3087-417c-abef-17ec020c7c58" name="Default Changelist" comment="update w7">
+      <change afterPath="$PROJECT_DIR$/src/main/java/week_7/dqy/MyQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/week_7/dqy/Identify.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/week_7/dqy/Identify.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/week_7/dqy/MyTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/week_7/dqy/MyTree.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,21 +44,22 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1jjWVkx8LPX83as1iN1A3Gb9MT0" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="false" id="更新" />
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="Application.CashierDesk">
+  <component name="RunManager" selected="Application.MyTree">
     <configuration name="CashierDesk" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="week_7.wangwei.CashierDesk" />
       <module name="DataStruct" />
@@ -61,19 +86,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MyTree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="week_7.dqy.MyTree" />
+      <module name="DataStruct" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="week_7.dqy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MyTree" />
         <item itemvalue="Application.CashierDesk" />
         <item itemvalue="Application.Compile" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="6a777887-01ce-432c-927f-2b7d56395563" name="Default Changelist" comment="" />
+      <changelist id="16ab5eff-3087-417c-abef-17ec020c7c58" name="Default Changelist" comment="update w7" />
       <created>1604318006037</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -87,6 +127,9 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="570" y="306" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604318290186">
       <screen x="0" y="0" width="1920" height="1080" />
@@ -96,21 +139,25 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="672" y="57" width="561" height="896" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1604366679222" />
-    <state width="1850" height="491" key="GridCell.Tab.0.bottom" timestamp="1604328794392">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1604917199992">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604917199992" />
     <state width="1850" height="491" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1604328794392" />
-    <state width="1850" height="491" key="GridCell.Tab.0.center" timestamp="1604328794391">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1604917199992">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1604917199992" />
     <state width="1850" height="491" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1604328794391" />
-    <state width="1850" height="491" key="GridCell.Tab.0.left" timestamp="1604328794391">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1604917199992">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1604917199992" />
     <state width="1850" height="491" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1604328794391" />
-    <state width="1850" height="491" key="GridCell.Tab.0.right" timestamp="1604328794391">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1604917199992">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1604917199992" />
     <state width="1850" height="491" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1604328794391" />
     <state width="1850" height="524" key="GridCell.Tab.1.bottom" timestamp="1604322064715">
       <screen x="0" y="0" width="1920" height="1080" />
