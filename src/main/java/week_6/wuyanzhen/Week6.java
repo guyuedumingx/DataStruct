@@ -11,7 +11,7 @@ import java.util.*;
  */
 public class Week6 {
 
-    static Map<Integer, Boolean> isUse = new HashMap<>();
+    static Map<Integer, Boolean> isUse = new HashMap<Integer, Boolean>();
     static int count = 0;
     static BufferedWriter writer;
     static BufferedReader reader;
@@ -181,7 +181,7 @@ public class Week6 {
 
 
     public static LinkedList<Integer> getListExpectN(LinkedList<Integer> list, Integer n) {
-        LinkedList<Integer> resList = new LinkedList<>();
+        LinkedList<Integer> resList = new LinkedList<Integer>();
         for (Integer integer : list) {
             if (!integer.equals(n)) {
                 resList.add(integer);
@@ -224,7 +224,7 @@ public class Week6 {
      */
     public static boolean isMatch(String str) {
         char[] chars = str.toCharArray();
-        FlorenceStack<Character> stack = new FlorenceStack<>();
+        FlorenceStack<Character> stack = new FlorenceStack<Character>();
         try {
             for (char c : chars) {
                 if ('{' == c || '(' == c || '[' == c) {
@@ -258,7 +258,7 @@ public class Week6 {
      * @param length 长度
      */
     public static void generatePermutation(int length) throws IOException {
-        FlorenceStack<Integer> stack = new FlorenceStack<>();
+        FlorenceStack<Integer> stack = new FlorenceStack<Integer>();
         for (int i = 1; i <= length; i++) {
             stack.push(i);
             isUse.put(i, true);
@@ -304,7 +304,7 @@ public class Week6 {
     private static String isFromStackPopAndPush(String template, String pattern) {
         int count = 1;
         StringBuilder operations = new StringBuilder();
-        FlorenceStack<Character> stack = new FlorenceStack<>();
+        FlorenceStack<Character> stack = new FlorenceStack<Character>();
         int length = template.length();
         int tempPointer = 0;
         int patPointer = 0;
@@ -340,7 +340,7 @@ public class Week6 {
      * @throws IOException
      */
     private static void judgeAllPermutationIsFix(int length) throws IOException {
-        ArrayList<String> list = new ArrayList<>();
+        ArrayList<String> list = new ArrayList<String>();
         String template = getTemplate(length);
         String temp;
         while ((temp = reader.readLine()) != null) {
@@ -383,7 +383,7 @@ public class Week6 {
      */
     public static boolean isPalindromeByStack(String str) {
         int i;
-        FlorenceStack<Character> stack = new FlorenceStack<>();
+        FlorenceStack<Character> stack = new FlorenceStack<Character>();
         char[] toCharArray = str.toCharArray();
         int length = toCharArray.length;
         int mid = length / 2;
