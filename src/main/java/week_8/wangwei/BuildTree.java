@@ -62,4 +62,24 @@ public class BuildTree {
             }
         }
     }
+
+    /**
+     *
+     * @param root 根
+     * @param arr 构建数组
+     * @param i 第一个子节点下标
+     * @param isLeft 是左节点
+     */
+    public static void buildZigZagTree(TreeNode root, char[] arr, int i, boolean isLeft){
+        if(i>=arr.length){return;}
+        TreeNode<Character> node = new TreeNode<Character>(arr[i]);
+        if(isLeft){
+            root.setLeft(node);
+            buildZigZagTree(node, arr, ++i,false);
+        }else{
+            root.setRight(node);
+            buildZigZagTree(node, arr, ++i,true);
+        }
+
+    }
 }

@@ -23,3 +23,20 @@ public static void reverse(TreeNode root){
     reverse(root.getRight());
 }
 ```
+
+#### 反转单支ZigZag树  
+
+[**解法**](./wangwei/ReverseZigZagTree.java)   
+
+1. 如果节点有左子树  
+2. 则将左子节点设置成自身的父节点  
+3. 且自身是父节点的右子节点  
+4. 同理设置右子树  
+5. 返回最底层的节点当作根节点  
+
+#### 将所有的叶子节点连接成一个链表  
+
+[**解法**](./wangwei/LinkedForLeef.java)     
+
+> 树的叶子节点从左到右依次相连  
+

@@ -1,5 +1,7 @@
 package util.wangwei;
 
+import java.lang.reflect.Field;
+
 /**
  * 基本链表
  */
@@ -23,6 +25,18 @@ public class MyLink<T> {
         public void add(Node<T> node){
             node.next = head.next;
             head.next = node;
+        }
+
+        /**
+         *尾插法
+         * @param t
+         */
+        public void addLast(T t) {
+            Node node = head;
+            while(node.next!=null) {
+                node = node.next;
+            }
+            node.next = new Node(t);
         }
 
     /**
@@ -52,4 +66,22 @@ public class MyLink<T> {
             System.out.println();
         }
 
-    }
+        public void prt(String name){
+            //空链表情况,就是只有一个头指针,头指针的next是null
+            if(this.head.next == null){return;}
+            //指针
+            Node<T> p = this.head.next;
+            System.out.print("head");
+            while(p!=null){
+                try {
+                    Field field = p.data.getClass().getDeclaredField(name);
+                    field.setAccessible(true);
+                    System.out.print(" -> "+field.get(p.data));
+                    p = p.next;
+                }catch (Exception e){
+                    throw new RuntimeException("没有这个字段");
+                }
+            }
+            System.out.println();
+        }
+}
