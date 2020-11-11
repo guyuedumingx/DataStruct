@@ -1,7 +1,5 @@
 package util.dqy;
 
-import week_7.dqy.MyTree;
-
 import java.util.Scanner;
 
 public class QyTree<T> {
@@ -15,21 +13,22 @@ public class QyTree<T> {
         }
     }
 
-    Node root = new Node('#');
+    //创建头结点
+    Node root = new Node("#");
 
-    MyTree buildTree() {
+    //根据输入创建一棵树
+    public void buildTree() {
         Scanner src = new Scanner(System.in);
-        MyTree newTree = new MyTree();
-        root.val = src.next();
+        this.root.val = src.next();
         QyQueue<Node> q = new QyQueue<Node>();
-        q.push(root);
+        q.push(this.root);
         //当前队列不为空时
         while (!q.isEmpty()) {
             //获取结点
             Node cur = q.getFront();
             q.pop();
             //创建两个结点分别为左节点和右节点
-            Node ln = new Node(src.next());
+            Node ln = new Node(src.);
             Node rn = new Node(src.next());
             //“#”代表空
             //判断当前点是否为空，为空则连入结点中，并继续处理后续的点
@@ -42,6 +41,23 @@ public class QyTree<T> {
                 q.push(rn);
             }
         }
-        return newTree;
     }
+
+    //遍历并输出一棵树
+    public void Search() {
+        QyQueue<Node> q = new QyQueue<Node>();
+        q.push(this.root);
+        while (!q.isEmpty()) {
+            int len = q.size();
+            while (len-- != 0) {
+                Node cur = q.getFront();
+                q.pop();
+                System.out.print(cur.val + " ");
+                if (cur.left != null) q.push(cur.left);
+                if (cur.right != null) q.push(cur.right);
+            }
+            System.out.println();
+        }
+    }
+
 }
