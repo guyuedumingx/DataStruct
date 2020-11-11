@@ -8,7 +8,7 @@
 > 每次都翻转传入的节点的子节点  
 
 依次翻转子树  
-![翻转二叉树](../../../../res/image/BubbleSort.gif)  
+![翻转二叉树](../../../../res/image/reverseTree.gif)  
 
 *代码实现*  
 ```java
