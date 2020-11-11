@@ -39,4 +39,27 @@ public class BuildTree {
         }
         return root;
     }
+
+    /**
+     * arr[0]空着
+     * 根目录在arr[1]
+     * @param arr
+     */
+    public static void buildTree(TreeNode root,char[] arr, int i){
+        if(i>arr.length/2){return;}
+        if(2*i<arr.length){
+            if(arr[i*2]!='#') {
+                TreeNode<Character> left = new TreeNode<Character>(arr[i * 2]);
+                root.setLeft(left);
+                buildTree(left, arr, i * 2);
+            }
+        }
+        if(2*i+1<arr.length){
+            if(arr[i*2+1]!='#') {
+                TreeNode<Character> right = new TreeNode<Character>(arr[i * 2 + 1]);
+                root.setRight(right);
+                buildTree(right, arr, i * 2 + 1);
+            }
+        }
+    }
 }

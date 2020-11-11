@@ -94,7 +94,7 @@ public class Week9 {
      * @return
      */
     private static List<String> getAllPossibleList(List<String> calculateByAfterOrderWay, List<String> calculateByAfterOrderWay1) {
-        List<String> list = new ArrayList<>();
+        List<String> list = new ArrayList<String>();
         list.addAll(calculateByAfterOrderWay);
         list.addAll(calculateByAfterOrderWay1);
         return list;
@@ -110,7 +110,7 @@ public class Week9 {
      * @return
      */
     private static List<String> calculateByAfterOrderWay(TreeNode<Integer> builderTree, int[] nums) {
-        List<String> expressList = new ArrayList<>();
+        List<String> expressList = new ArrayList<String>();
         //三重循环遍历三个运算符的四种效果
         for (int operator1 = 0; operator1 < 4; operator1++) {
             for (int operator2 = 0; operator2 < 4; operator2++) {
@@ -200,15 +200,15 @@ public class Week9 {
      * @return
      */
     private static TreeNode<Integer> getTreeForCalculateTwentyFourPointFirstType(int[] provideNum) {
-        TreeNode<Integer> root = new TreeNode<>(null);
-        TreeNode<Integer> rootLeft = new TreeNode<>(null);
-        TreeNode<Integer> rootRight = new TreeNode<>(null);
+        TreeNode<Integer> root = new TreeNode<Integer>(null);
+        TreeNode<Integer> rootLeft = new TreeNode<Integer>(null);
+        TreeNode<Integer> rootRight = new TreeNode<Integer>(null);
         root.setLeft(rootLeft);
         root.setRight(rootRight);
-        rootLeft.setLeft(new TreeNode<>(provideNum[0]));
-        rootLeft.setRight(new TreeNode<>(provideNum[1]));
-        rootRight.setLeft(new TreeNode<>(provideNum[2]));
-        rootRight.setRight(new TreeNode<>(provideNum[3]));
+        rootLeft.setLeft(new TreeNode<Integer>(provideNum[0]));
+        rootLeft.setRight(new TreeNode<Integer>(provideNum[1]));
+        rootRight.setLeft(new TreeNode<Integer>(provideNum[2]));
+        rootRight.setRight(new TreeNode<Integer>(provideNum[3]));
         return root;
     }
 
@@ -223,19 +223,19 @@ public class Week9 {
      * @return
      */
     private static TreeNode<Integer> getTreeForCalculateTwentyFourPointSecondType(int[] provideNum) {
-        TreeNode<Integer> root = new TreeNode<>(null);
-        TreeNode<Integer> rootLeft = new TreeNode<>(null);
-        TreeNode<Integer> rootRight = new TreeNode<>(provideNum[3]);
+        TreeNode<Integer> root = new TreeNode<Integer>(null);
+        TreeNode<Integer> rootLeft = new TreeNode<Integer>(null);
+        TreeNode<Integer> rootRight = new TreeNode<Integer>(provideNum[3]);
         //根节点的左右
         root.setLeft(rootLeft);
         root.setRight(rootRight);
         //左节点的左子树
-        TreeNode<Integer> subRootLeft = new TreeNode<>(null);
-        rootLeft.setRight(new TreeNode<>(provideNum[2]));
+        TreeNode<Integer> subRootLeft = new TreeNode<Integer>(null);
+        rootLeft.setRight(new TreeNode<Integer>(provideNum[2]));
         rootLeft.setLeft(subRootLeft);
         //设置左节点的左子树的左右
-        subRootLeft.setLeft(new TreeNode<>(provideNum[0]));
-        subRootLeft.setRight(new TreeNode<>(provideNum[1]));
+        subRootLeft.setLeft(new TreeNode<Integer>(provideNum[0]));
+        subRootLeft.setRight(new TreeNode<Integer>(provideNum[1]));
         return root;
     }
 
@@ -249,7 +249,7 @@ public class Week9 {
         //初始化编码树
         root.setData(-1);
         initTree(root);
-        List<String> list = new ArrayList<>();
+        List<String> list = new ArrayList<String>();
         //统计出所有的路径
         resGetTheEncodingStr(list, root, "");
         for (int i=1;i<list.size();i++){

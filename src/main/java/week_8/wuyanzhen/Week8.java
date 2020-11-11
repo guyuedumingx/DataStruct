@@ -54,7 +54,7 @@ public class Week8 {
     static int index=0;
     public static <T> TreeNode<T> buildBinaryTreeByForeOrder(T[] nodes,int height,int sourceHeightBinaryTree){
         if (height<=sourceHeightBinaryTree&&index<nodes.length){
-            TreeNode<T> root = new TreeNode<>(nodes[index++]);
+            TreeNode<T> root = new TreeNode<T>(nodes[index++]);
             root.setLeft(buildBinaryTreeByForeOrder(nodes,height+1,sourceHeightBinaryTree));
             root.setRight(buildBinaryTreeByForeOrder(nodes,height+1,sourceHeightBinaryTree));
             return root;
@@ -97,7 +97,7 @@ public class Week8 {
         if (root==null){
             throw new Exception("输入为空");
         }
-        FlorenceStack<TreeNode<T>> stack = new FlorenceStack<>();
+        FlorenceStack<TreeNode<T>> stack = new FlorenceStack<TreeNode<T>>();
         stack.push(root);
         while (!stack.isEmpty()){
             TreeNode<T> node = stack.pop();
@@ -122,7 +122,7 @@ public class Week8 {
         if (root==null){
             throw new Exception("输入为空");
         }
-        FlorenceStack<TreeNode<T>> stack = new FlorenceStack<>();
+        FlorenceStack<TreeNode<T>> stack = new FlorenceStack<TreeNode<T>>();
         TreeNode<T> temp;
         stack.push(root);
         while (!stack.isEmpty()){
@@ -154,7 +154,7 @@ public class Week8 {
         if (startFore>endFore||midStart>midEnd){
             return null;
         }
-        TreeNode<T> root = new TreeNode<>(foreOrder[startFore]);
+        TreeNode<T> root = new TreeNode<T>(foreOrder[startFore]);
         //遍历寻找根节点
         for (int i=midStart;i<=midEnd;i++){
             if(midOrder[i].equals(foreOrder[startFore])){
