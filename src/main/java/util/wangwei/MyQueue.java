@@ -9,6 +9,7 @@ public class MyQueue<T> {
    MyLink<T> link = new MyLink<T>();
    int length = 0;
 
+
     /**
      * 插入
      * @param data
