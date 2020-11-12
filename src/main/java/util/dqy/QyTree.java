@@ -7,9 +7,9 @@ import java.util.Scanner;
 
 public class QyTree<T> {
     public class Node<T> {
-        T val;
-        Node left;
-        Node right;
+        public T val;
+        public Node left;
+        public Node right;
 
         Node(T val) {
             this.val = val;
@@ -163,6 +163,62 @@ public class QyTree<T> {
             root = root.right;
         }
     }
+
+    //前序遍历+中序遍历构造二叉树
+    Map<Integer, Integer> idxMap;
+
+    //通过递归建树
+    public QyTree.Node tBuilder(int[] preorder, int[] inorder, int pl, int pr, int il, int ir) {
+        //跳出条件
+        if (pl > pr) return null;
+        //通过前序得到根结点，再在中序中找到相应点的下标
+        int PR = pl, IR = idxMap.get(preorder[PR]);
+        //创建一个新节点
+        QyTree.Node root = new QyTree.Node(preorder[PR]);
+        int len = IR - il;
+        //递归建造该结点下的子树
+        root.left = tBuilder(preorder, inorder, pl + 1, pl + len, il, IR - 1);
+        root.right = tBuilder(preorder, inorder, pl + len + 1, pr, IR + 1, ir);
+        return root;
+    }
+
+    //调用方法递归建树
+    public QyTree.Node PIBuildTree(int[] preorder, int[] inorder) {
+        int n = preorder.length;
+        idxMap = new HashMap<Integer, Integer>();
+        for (int i = 0; i < n; i++) {
+            idxMap.put(inorder[i], i);
+        }
+        return tBuilder(preorder, inorder, 0, n - 1, 0, n - 1);
+    }
+
+    //后序遍历+中序遍历构造二叉树
+    Map<Integer, Integer> idMap;
+    //通过递归建树
+    public QyTree.Node pBuilder(int[] inorder, int[] postorder, int il, int ir, int pl, int pr) {
+        //跳出条件
+        if (pl > pr) return null;
+        //通过前序得到根结点，再在中序中找到相应点的下标
+        int PR = pr, IR = idxMap.get(postorder[PR]);
+        int len = ir - IR;
+        //创建一个新节点
+        QyTree.Node root = new QyTree.Node(postorder[PR]);
+        //递归建造该结点下的子树
+        root.left = pBuilder(inorder, postorder, il, IR - 1, pl, pr - len - 1);
+        root.right = pBuilder(inorder, postorder, IR + 1, ir, pr - len, pr - 1);
+        return root;
+    }
+
+    //调用方法递归建树
+    public QyTree.Node IPBuildTree(int[] inorder, int[] postorder) {
+        int n = postorder.length;
+        idMap = new HashMap<Integer, Integer>();
+        for (int i = 0; i < n; i++) {
+            idMap.put(inorder[i], i);
+        }
+        return tBuilder(inorder, postorder, 0, n - 1, 0, n - 1);
+    }
+
 
     //*用栈实现后序遍历
     public void LrdByStack() {
