@@ -117,10 +117,10 @@ public class QyTree<T> {
     }
 
     //递归后续遍历
-    public void Led(Node root) {
+    public void Lrd(Node root) {
         if (root == null) return;
-        Led(root.left);
-        Led(root.right);
+        Lrd(root.left);
+        Lrd(root.right);
         System.out.print(root.val + " ");
     }
 
