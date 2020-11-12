@@ -2,8 +2,8 @@ package util.dqy;
 
 public class QyQueue<T> {
     static class Node<T> {
-        private T val;
-        private Node next;
+        T val;
+        Node next;
 
         Node(T val) {
             this.val = val;
@@ -11,7 +11,7 @@ public class QyQueue<T> {
     }
 
     //头结点
-    Node head = new Node(0);
+    public Node head = new Node(0);
 
     //压入队列
     public void push(T num) {

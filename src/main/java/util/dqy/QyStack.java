@@ -2,8 +2,8 @@ package util.dqy;
 
 public class QyStack<T> {
     static class Node<T> {
-        private T data;
-        private Node next;
+        T data;
+        Node next;
 
         //有参构造
         public Node(T data) {
@@ -11,7 +11,7 @@ public class QyStack<T> {
         }
     }
 
-    Node head = new Node(null);
+    public Node head = new Node(null);
 
     //压栈
     public void push(T v) {

@@ -14,7 +14,7 @@ public class QyTree<T> {
     }
 
     //创建头结点
-    Node root = new Node("#");
+    public Node root = new Node("#");
 
     //根据输入创建一棵树
     public void buildTree() {
@@ -57,6 +57,63 @@ public class QyTree<T> {
                 if (cur.right != null) q.push(cur.right);
             }
             System.out.println();
+        }
+    }
+
+    //递归先序遍历
+    public void Dlr(Node root) {
+        if (root == null) return;
+        System.out.print(root.val + " ");
+        Dlr(root.left);
+        Dlr(root.right);
+    }
+
+    //递归中序遍历
+    public void Ldr(Node root) {
+        if (root == null) return;
+        Ldr(root.left);
+        System.out.print(root.val + " ");
+        Ldr(root.right);
+    }
+
+    //递归后续遍历
+    public void Led(Node root) {
+        if (root == null) return;
+        Led(root.left);
+        Led(root.right);
+        System.out.print(root.val + " ");
+    }
+
+    //用栈实现前序遍历
+    public void DlrByStack() {
+        QyStack<Node> stk = new QyStack<Node>();
+        Node root = this.root;
+        while (root != null || !stk.isEmpty()) {
+            //先一直往
+            while (root != null) {
+                System.out.print(root.val + " ");
+                stk.push(root);
+                root = root.left;
+            }
+            root = stk.getTop();
+            stk.pop();
+            root = root.right;
+        }
+    }
+
+    //用栈实现中序遍历
+    public void LdrByStack() {
+        QyStack<Node> stk = new QyStack<Node>();
+        Node root = this.root;
+        while (root != null || !stk.isEmpty()) {
+            while (root != null) {
+                stk.push(root);
+                root = root.left;
+            }
+            root = stk.getTop();
+            stk.pop();
+            System.out.print(root.val + " ");
+            root = root.right;
         }
     }
 
