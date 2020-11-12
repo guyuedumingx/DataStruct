@@ -28,7 +28,7 @@ public class QyTree<T> {
             Node cur = q.getFront();
             q.pop();
             //创建两个结点分别为左节点和右节点
-            Node ln = new Node(src.);
+            Node ln = new Node(src.next());
             Node rn = new Node(src.next());
             //“#”代表空
             //判断当前点是否为空，为空则连入结点中，并继续处理后续的点
