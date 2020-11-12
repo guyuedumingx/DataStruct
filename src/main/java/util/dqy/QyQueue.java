@@ -1,7 +1,7 @@
 package util.dqy;
 
 public class QyQueue<T> {
-    static class Node<T> {
+     class Node<T> {
         T val;
         Node next;
 

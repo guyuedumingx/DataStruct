@@ -1,7 +1,7 @@
 package util.dqy;
 
 public class QyStack<T> {
-    static class Node<T> {
+     class Node<T> {
         T data;
         Node next;
 

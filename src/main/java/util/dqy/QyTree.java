@@ -6,7 +6,7 @@ import java.util.Map;
 import java.util.Scanner;
 
 public class QyTree<T> {
-    class Node<T> {
+    public class Node<T> {
         T val;
         Node left;
         Node right;
