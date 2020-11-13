@@ -21,6 +21,5 @@ public class TestWeek8Tree {
         System.out.println("非递归中序遍历");
         newTree.LdrByStack();
         System.out.println();
-
     }
 }
