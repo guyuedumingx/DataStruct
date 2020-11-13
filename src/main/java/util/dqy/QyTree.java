@@ -257,7 +257,7 @@ public class QyTree<T> {
     public void countBranch(Node root) {
         if (root == null) return;
         if (root.left != null || root.right != null) {
-            AmountOfLeaves++;
+            AmountOfBranch++;
         }
         countBranch(root.left);
         countBranch(root.right);
