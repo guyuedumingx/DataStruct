@@ -7,6 +7,7 @@ public class MyTree {
         QyTree<String> newTree = new QyTree<>();
         newTree.buildTree();
         newTree.Search();
+        String[] arr = newTree.createTreeArray();
         System.out.println();
     }
 }

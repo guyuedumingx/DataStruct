@@ -21,31 +21,38 @@ class Exp {
         MyStack num = new MyStack();
         char[] expression = exp.toCharArray();
         for (int i = 0; i < expression.length; i++) {
+            //判断当前的字符是数字还是运算符
+            //是数字的情况
             if (expression[i] >= '0' && expression[i] <= '9') {
                 cur *= 10;
                 cur += expression[i] - '0';
+                //空格分隔的情况
             } else if (expression[i] == ' ') {
                 if (expression[i - 1] != '+' && expression[i - 1] != '-' && expression[i - 1] != '*' && expression[i - 1] != '/')
                     num.push(cur);
                 cur = 0;
+                //加号的情况
             } else if (expression[i] == '+') {
                 int addNum1 = num.getTop();
                 num.pop();
                 int addNum2 = num.getTop();
                 num.pop();
                 num.push(addNum1 + addNum2);
+                //减号的情况
             } else if (expression[i] == '-') {
                 int addNum1 = num.getTop();
                 num.pop();
                 int addNum2 = num.getTop();
                 num.pop();
                 num.push(addNum1 - addNum2);
+                //乘号的情况
             } else if (expression[i] == '*') {
                 int addNum1 = num.getTop();
                 num.pop();
                 int addNum2 = num.getTop();
                 num.pop();
                 num.push(addNum1 * addNum2);
+                //除号的情况
             } else if (expression[i] == '/') {
                 int addNum1 = num.getTop();
                 num.pop();
@@ -57,6 +64,7 @@ class Exp {
         return num.getTop();
     }
 
+    //创建映射
     public static void createIdx() {
         idx['+'] = 0;
         idx['-'] = 1;
