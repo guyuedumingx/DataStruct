@@ -1,7 +1,7 @@
 ## DataStruct
 
 > 看代码的时候如果碰到不再同一个文件的引用,请跳转到import的类里面看  
-> util包包含了每个人自己常用的工具包  
+> util包含了每个人自己常用的工具包  
 
 [**util**](./src/main/java/util)  
 
