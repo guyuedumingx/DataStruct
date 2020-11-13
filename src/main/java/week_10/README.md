@@ -40,3 +40,10 @@ public static void reverse(TreeNode root){
 
 > 树的叶子节点从左到右依次相连  
 
+#### 把不对称的二叉树转成对称的二叉树  
+
+> 通过添加节点的方式  
+
+我感觉我的代码有问题   
+大神帮我找找  
+[**解法**](./wangwei/SymmetricalTree.java)   
