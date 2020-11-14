@@ -5,6 +5,8 @@ import week_8.wangwei.BuildTree;
 
 /**
  * 把不对称的二叉树通过添加节点转化成对称的二叉树
+ * 我感觉我这代码有问题,就不讲了
+ * 看看就好
  * @author yohoyes
  */
 public class SymmetricalTree {

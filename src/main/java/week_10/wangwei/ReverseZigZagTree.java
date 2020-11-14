@@ -20,12 +20,16 @@ public class ReverseZigZagTree {
 
     /**
      * 反转单支ZigZag树
+     * 同样是反转子树
+     * 区别是要返回最深的那个叶子节点
+     * 要考虑到怎么只返回最深的子节点,因为整颗树都翻过来了,所以最里面的节点变成了根节点
      * @param root 根节点
      * @return
      */
     public static TreeNode reverseZigZag(TreeNode root){
         if(root==null){return null;}
         TreeNode node = null;
+        //如果左子节点不是空,因为是ZigZag树,那么右边的节点就是空的
         if(root.getLeft()!=null){
             TreeNode left = root.getLeft();
             node = reverseZigZag(left);
