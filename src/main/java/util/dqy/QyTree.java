@@ -153,7 +153,7 @@ public class QyTree<T> {
             while (root != null) {
                 stk.push(root);
                 root = root.left;
-            }
+            }   
             //回溯
             root = stk.getTop();
             stk.pop();

@@ -37,4 +37,9 @@ public class CntTree<T> {
         RTmp.left = new Node(cNum[3]);
         RTmp.right = new Node(cNum[4]);
     }
+
+    //遍历计算
+//    dfs() {
+//
+//    }
 }
