@@ -80,6 +80,5 @@ public class BuildTree {
             root.setRight(node);
             buildZigZagTree(node, arr, ++i,true);
         }
-
     }
 }
