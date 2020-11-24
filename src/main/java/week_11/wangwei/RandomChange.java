@@ -10,6 +10,7 @@ import week_8.wangwei.BuildTree;
  * 1： 该节点的值跟左子节点交换
  * 2： 该节点的值跟右子节点交换
  * 直到0或叶子节点
+ * 这是一棵完全二叉树
  * @author yohoyes
  */
 public class RandomChange {
@@ -29,7 +30,7 @@ public class RandomChange {
 
     private static void randomChange(TreeNode<Integer> root){
         int random = createRandom();
-        if(random==0){
+        if(random==0||(root.getLeft()==null&&root.getRight()==null)){
             return;
         }else if(random==1){
             int tmp = root.getLeft().getValue();
