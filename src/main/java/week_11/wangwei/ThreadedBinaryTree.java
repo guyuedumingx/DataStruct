@@ -13,21 +13,16 @@ public class ThreadedBinaryTree {
 
         //建树
         buildTree(root,chars,1);
-        search(root);
+        search(null,root);
     }
 
-    private static void search(Node root){
-        if(root==null){
-            return;
+    private static Node search(Node root, Node node){
+        if(node==null){
+            return root;
         }
-        if(root.getLeft()!=null){
-            root.getLeft().setPre(root);
-            search(root.getLeft());
-        }
-        if(root.getRight()!=null){
-            root.getRight().setPre(root);
-            search(root.getRight());
-        }
+        node.setPre(root);
+        root = search(node, node.getLeft());
+        return search(root, node.getRight());
     }
 
     /**
