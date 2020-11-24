@@ -19,6 +19,9 @@ public class ReverseBinaryTree {
 
     /**
      * 翻转二叉树
+     * 原理就是,依次反转左子树和右子树
+     * 把每个节点的左边儿子变成右边儿子
+     * 右边儿子变成左边儿子
      * @param root
      */
     public static void reverse(TreeNode root){

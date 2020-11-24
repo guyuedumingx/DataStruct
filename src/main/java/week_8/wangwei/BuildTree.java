@@ -33,7 +33,6 @@ public class BuildTree {
             }else if(poll.getRight()==null){
                 poll.setRight(node);
                 queue.offer(node);
-            }else {
                 queue.poll();
             }
         }
@@ -80,6 +79,5 @@ public class BuildTree {
             root.setRight(node);
             buildZigZagTree(node, arr, ++i,true);
         }
-
     }
 }

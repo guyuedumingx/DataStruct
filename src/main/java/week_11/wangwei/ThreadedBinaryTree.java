@@ -1,21 +1,10 @@
-package week_10.wangwei;
+package week_11.wangwei;
 
 /**
- * 把树中的所有叶子节点通过链表从左到右相连接
+ * 线索二叉树
  * @author yohoyes
  */
-public class LinkedForLeef {
-
-    /**
-     * 首先构造出一棵树
-     *    1
-     *  2   3
-     *   5 6 7
-     *  # 表示空
-     *  把树的字符串转化成char型数组
-     *  头节点是chas[1] 不是chars[0] (为了方便建树,节点的左子节点下标是2*i,右子节点下标是2*i+1)
-     * @param args
-     */
+public class ThreadedBinaryTree {
     public static void main(String[] args) {
         String str = "#123#567";
         char[] chars = str.toCharArray();
@@ -24,36 +13,16 @@ public class LinkedForLeef {
 
         //建树
         buildTree(root,chars,1);
-        //连接叶子节点并返回左边第一个子节点
-        Node firstLeef = getLeef(root);
+        search(null,root);
     }
 
-    /**
-     * 连接叶子节点
-     * 首先得判断是不是叶子节点
-     * @param root
-     * @return
-     */
-    public static Node getLeef(Node root){
-        //判断节点是否为空
-        if(root==null){
-            return null;
-        }
-        //判断节点是不是叶子节点
-        if(root.getLeft()==null&&root.getRight()==null){
+    private static Node search(Node root, Node node){
+        if(node==null){
             return root;
         }
-        //拿到左边叶子节点
-        Node leef = getLeef(root.getLeft());
-        if(leef==null){
-            //拿到右边的叶子节点
-            leef = getLeef(root.getRight());
-        }
-        if(leef!=null){
-            //前面的节点连上这个节点
-            leef.setNext(getLeef(root.getRight()));
-        }
-        return leef;
+        node.setPre(root);
+        root = search(node, node.getLeft());
+        return search(root, node.getRight());
     }
 
     /**
@@ -62,7 +31,7 @@ public class LinkedForLeef {
      * 根目录在arr[1]
      * @param arr
      */
-    public static void buildTree(Node root,char[] arr, int i){
+    public static void buildTree(Node root, char[] arr, int i){
         //只需要遍历到树的一半的位置就可以了
         if(i>arr.length/2){return;}
         //判断有无左子节点
@@ -88,27 +57,26 @@ public class LinkedForLeef {
     }
 }
 
-
 /**
  * 节点类
  * @param <T>
  */
 class Node<T>{
-    Node next;
-    Node left;
-    Node right;
+    Node<T> pre;
+    Node<T> left;
+    Node<T> right;
     T value;
 
     public Node(T value) {
         this.value = value;
     }
 
-    public Node getNext() {
-        return next;
+    public Node getPre() {
+        return pre;
     }
 
-    public void setNext(Node next) {
-        this.next = next;
+    public void setPre(Node pre) {
+        this.pre = pre;
     }
 
     public void setLeft(Node left) {
