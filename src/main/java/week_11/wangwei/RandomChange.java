@@ -16,6 +16,7 @@ public class RandomChange {
 
     public static void main(String[] args) {
         TreeNode<Integer> root = BuildTree.build(15);
+        randomChange(root);
     }
 
     /**
