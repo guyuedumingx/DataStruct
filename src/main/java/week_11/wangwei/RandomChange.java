@@ -2,6 +2,7 @@ package week_11.wangwei;
 
 import util.wangwei.TreeNode;
 import week_8.wangwei.BuildTree;
+import week_8.wangwei.SearchTree;
 
 /**
  * 让命运决定谁是爸爸
@@ -17,7 +18,13 @@ public class RandomChange {
 
     public static void main(String[] args) {
         TreeNode<Integer> root = BuildTree.build(15);
+        //打印出来看看
+        SearchTree.bfs(root);
+
         randomChange(root);
+
+        //打印出来看看
+        SearchTree.bfs(root);
     }
 
     /**

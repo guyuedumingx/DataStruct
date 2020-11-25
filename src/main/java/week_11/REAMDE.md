@@ -3,9 +3,13 @@
 
 每一个节点都有一个指针指向它前一个被访问到的节点  
 *前序遍历*  
-> 拓展,`中序`,`后序`  
+> `拓展`,`中序`,`后序`  
 
 [**解法**](./wangwei/ThreadedBinaryTree.java)  
+Code from wangwei
+
+[**解法**](./dqy/ThreadedBinaryTree.java)  
+Code from dqy
 
 #### 随机  
 
@@ -19,6 +23,6 @@
 每一个叶节点跟它距离最近的叶子节点交换(整个交换)  
 
 #### 作业集  
-Code from wuyanzhen  
 
 [**解法**](./wuyanzhen/Week11.java)  
+Code from wuyanzhen  

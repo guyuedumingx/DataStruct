@@ -5,6 +5,11 @@
 左右反转二叉树  
 
 [**解法**](./wangwei/ReverseBinaryTree.java)    
+Code from wangwei
+
+[**解法**](./dqy/ReverseBinaryTree.java)  
+Code from dqy
+
 > 每次都翻转传入的节点的子节点  
 
 依次翻转子树  
@@ -27,6 +32,10 @@ public static void reverse(TreeNode root){
 #### 反转单支ZigZag树  
 
 [**解法**](./wangwei/ReverseZigZagTree.java)   
+Code from wangwei
+
+[**解法**](./dqy/ReverseZigZagTree.java)  
+Code from dqy
 
 1. 如果节点有左子树  
 2. 则将左子节点设置成自身的父节点  

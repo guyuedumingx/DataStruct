@@ -15,27 +15,29 @@ public class SearchTree {
      * 层序遍历
      * @param root
      */
-    public void bfs(TreeNode root){
+    public static void bfs(TreeNode root){
         MyQueue<TreeNode> queue = new MyQueue<TreeNode>();
         queue.offer(root);
-
+        System.out.print(root.getValue()+"\t");
         while (!queue.isEmpty()){
             TreeNode poll = queue.poll();
             if(poll.getLeft()!=null){
-                System.out.println(poll.getLeft().getValue());
+                System.out.print(poll.getLeft().getValue()+"\t");
                 queue.offer(poll.getLeft());
-            }else if(poll.getRight()!=null){
-                System.out.println(poll.getRight().getValue());
+            }
+            if(poll.getRight()!=null){
+                System.out.print(poll.getRight().getValue()+"\t");
                 queue.offer(poll.getRight());
             }
         }
+        System.out.println();
     }
 
     /**
      * 先序遍历
      * @param node
      */
-    public void preSearch(TreeNode node){
+    public static void preSearch(TreeNode node){
         if (node==null){
             return;
         }
@@ -48,7 +50,7 @@ public class SearchTree {
      * 中序遍历
      * @param node
      */
-    public void midSearch(TreeNode node){
+    public static void midSearch(TreeNode node){
         if(node==null){return;}
         midSearch(node.getLeft());
         System.out.println(node.getValue());
@@ -59,7 +61,7 @@ public class SearchTree {
      * 后序遍历
      * @param node
      */
-    public void sufSearch(TreeNode node){
+    public static void sufSearch(TreeNode node){
         if(node==null){return;}
         sufSearch(node.getLeft());
         sufSearch(node.getRight());
