@@ -16,7 +16,6 @@ public class ShellSort {
         prt(sort);
     }
 
-
     private static int[] sort(int[] data){
         int[] sortArrays = getFabonacciArrays(data.length);
         for(int n = sortArrays.length-1; n>0; n--) {
@@ -28,8 +27,6 @@ public class ShellSort {
 
     /**
      * 单次排序
-     * @param data
-     * @param gap
      */
     private static void insertSort(int[] data, int gap) {
         int tmp,j;
@@ -43,7 +40,6 @@ public class ShellSort {
                 }
             }
             data[j+gap] = tmp;
-            prt(data);
         }
     }
 
@@ -66,8 +62,6 @@ public class ShellSort {
      * 有没有无所谓的，你只要把数组开的足够大就行
      * 不过这里我也跑了一遍状态压缩版的动态规划
      * 您可以康康
-     * @param n
-     * @return
      */
     private static int getLength(int n){
         int pre = 1;
