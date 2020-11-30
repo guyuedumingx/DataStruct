@@ -17,20 +17,27 @@ public class ShellSort {
     }
 
     private static int[] sort(int[] data){
-        int[] fabonacciArrays = getFabonacciArrays(data.length);
-        for(int n=fabonacciArrays.length-1; n>=0; n--) {
-            int distant=fabonacciArrays[n];
-            System.out.println(distant);
-            for(int i=0;i+distant<data.length; i++) {
-                if(data[i]>data[i+distant]) {
-                    int temp = data[i+distant];
-                    data[i+distant] = data[i];
-                    data[i] = temp;
-                }
-            }
-            prt(data);
+        int[] sortArrays = getFabonacciArrays(data.length);
+        for(int n = sortArrays.length-1; n>0; n--) {
+            int gap = sortArrays[n];
+            insertSort(data, gap);
         }
         return data;
+    }
+
+    private static void insertSort(int[] data, int gap) {
+        int tmp,j;
+        for(int i = gap; i < data.length; i++){
+            tmp = data[i];
+            for(j = i-gap; j >= 0; j = j-gap){
+                if(data[j] > tmp){
+                    data[j+gap] = data[j];
+                }else{
+                    break;
+                }
+            }
+            data[j+gap] = tmp;
+        }
     }
 
     /**
