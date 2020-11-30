@@ -9,12 +9,13 @@ import util.ReadData;
 public class ShellSort {
 
     public static void main(String[] args) {
-        int number = 100;
+        int number = 10;
         int[] numbers = ReadData.getNumbers(number);
         prt(numbers);
         int[] sort = sort(numbers);
         prt(sort);
     }
+
 
     private static int[] sort(int[] data){
         int[] sortArrays = getFabonacciArrays(data.length);
@@ -25,6 +26,11 @@ public class ShellSort {
         return data;
     }
 
+    /**
+     * 单次排序
+     * @param data
+     * @param gap
+     */
     private static void insertSort(int[] data, int gap) {
         int tmp,j;
         for(int i = gap; i < data.length; i++){
@@ -37,11 +43,13 @@ public class ShellSort {
                 }
             }
             data[j+gap] = tmp;
+            prt(data);
         }
     }
 
     /**
      * 获取直到大于N的斐波那契数列
+     * 这个函数根据传入的n判断应该返回的斐波那契数组应该是多长，怎样的
      */
     private static int[] getFabonacciArrays(int n){
         int[] res = new int[getLength(n)];
@@ -53,6 +61,14 @@ public class ShellSort {
         return res;
     }
 
+    /**
+     * 这个只是用来获取数组应该开多大的
+     * 有没有无所谓的，你只要把数组开的足够大就行
+     * 不过这里我也跑了一遍状态压缩版的动态规划
+     * 您可以康康
+     * @param n
+     * @return
+     */
     private static int getLength(int n){
         int pre = 1;
         int cur = 1;
