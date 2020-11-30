@@ -21,16 +21,24 @@ public class CompleteBinaryTree {
             return;
         }
         if(node.getLeft()==null){
-            int i = node.getRight().getValue() - 1;
-            TreeNode left = new TreeNode((char)i);
-            node.setLeft(left);
+            completeLeft(node);
         }
         if(node.getRight()==null){
-            int i = node.getLeft().getValue() + 1;
-            TreeNode right = new TreeNode((char)i);
-            node.setRight(right);
+            completeRight(node);
         }
         complete(node.getLeft());
         complete(node.getRight());
+    }
+
+    private static void completeLeft(TreeNode<Character> node){
+        int i = node.getRight().getValue() - 1;
+        TreeNode left = new TreeNode((char)i);
+        node.setLeft(left);
+    }
+
+    private static void completeRight(TreeNode<Character> node){
+        int i = node.getLeft().getValue() + 1;
+        TreeNode right = new TreeNode((char)i);
+        node.setRight(right);
     }
 }
