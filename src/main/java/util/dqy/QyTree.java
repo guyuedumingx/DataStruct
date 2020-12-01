@@ -221,26 +221,26 @@ public class QyTree<T> {
 
 
     //*用栈实现后序遍历
-    public void LrdByStack() {
-        QyStack<Node> stk = new QyStack<Node>();
-        Node root = this.root;
-        Map<Node, Boolean> used = null;
-        while (root != null || !stk.isEmpty()) {
-            //先一直往左走，走到底
-            while (root != null) {
-                stk.push(root);
-                used.put(root, true);
-                root = root.left;
-            }
-            System.out.println(root);
-            //回溯
-            root = stk.getTop();
-            stk.pop();
-            //访问右节点
-            root = root.right;
-            stk.push(root);
-        }
-    }
+//    public void LrdByStack() {
+//        QyStack<Node> stk = new QyStack<Node>();
+//        Node root = this.root;
+//        Map<Node, Boolean> used = null;
+//        while (root != null || !stk.isEmpty()) {
+//            //先一直往左走，走到底
+//            while (root != null) {
+//                stk.push(root);
+//                used.put(root, true);
+//                root = root.left;
+//            }
+//            System.out.println(root);
+//            //回溯
+//            root = stk.getTop();
+//            stk.pop();
+//            //访问右节点
+//            root = root.right;
+//            stk.push(root);
+//        }
+//    }
 
     //统计二叉树的叶子结点
     public void countLeaves(Node root) {
