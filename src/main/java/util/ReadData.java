@@ -16,7 +16,7 @@ public class ReadData {
      * @return 返回读取的int[]数组
      * @throws FileNotFoundException 找不到datafile.txt文件
      */
-    public static int[] getNumbers(int number) {
+    public static int[] getNumbersFromZero(int number) {
         Scanner in;
         try {
             String path = ReadData.class.getClassLoader().getResource("datafile.txt").getPath();
@@ -35,5 +35,33 @@ public class ReadData {
             nums[i] = Integer.valueOf(split[i]);
         }
         return nums;
+    }
+
+    /**
+     * 根节点在nums[1]
+     * @param number
+     * @return
+     */
+    public static int[] getNumbersFromOne(int number) {
+        Scanner in;
+        try {
+            String path = ReadData.class.getClassLoader().getResource("datafile.txt").getPath();
+            in = new Scanner(new File(path));
+        } catch (FileNotFoundException e) {
+            throw new RuntimeException("找不到datafile.txt");
+        }
+        String str = in.next();
+        //把datafile.txt中的数字按，分割成String 数组
+        String[] split = str.split(",");
+
+        int[] nums = new int[number];
+
+        nums[0] = 0;
+        //读取前number位数字
+        for(int i=1; i<number;i++) {
+            nums[i] = Integer.valueOf(split[i-1]);
+        }
+        return nums;
+
     }
 }

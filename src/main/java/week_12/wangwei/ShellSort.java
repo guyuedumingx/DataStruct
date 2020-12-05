@@ -1,6 +1,7 @@
 package week_12.wangwei;
 
 import util.ReadData;
+import util.wangwei.MyArray;
 
 /**
  * 希尔排序
@@ -10,10 +11,10 @@ public class ShellSort {
 
     public static void main(String[] args) {
         int number = 10;
-        int[] numbers = ReadData.getNumbers(number);
-        prt(numbers);
+        int[] numbers = ReadData.getNumbersFromZero(number);
+        MyArray.prt(numbers);
         int[] sort = sort(numbers);
-        prt(sort);
+        MyArray.prt(sort);
     }
 
     private static int[] sort(int[] data){
@@ -75,10 +76,4 @@ public class ShellSort {
         return i;
     }
 
-    private static void prt(int[] data) {
-        for(int i : data) {
-            System.out.print(i+" ");
-        }
-        System.out.println();
-    }
 }
