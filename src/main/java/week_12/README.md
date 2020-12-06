@@ -13,6 +13,8 @@ Code from wangwei
 
 利用斐波那契数列取步长，进行shell排序  
 
+![希尔排序](../../../../res/image/ShellSort.gif)  
+
 [**排序过程视频**](https://www.bilibili.com/video/BV1g441147uP?from=search&seid=4078538285457183417)  
 
 [**解法**](./wangwei/ShellSort.java)  

@@ -37,6 +37,11 @@ public class ReadData {
         return nums;
     }
 
+    @Deprecated
+    public static int[] getNumbers(int number) {
+        return getNumbersFromZero(number);
+    }
+
     /**
      * 根节点在nums[1]
      * @param number

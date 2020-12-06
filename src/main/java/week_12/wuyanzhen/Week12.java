@@ -1,11 +1,8 @@
 package week_12.wuyanzhen;
-
 import util.wuyanzhen.TreeNode;
-
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
-
 import static util.ReadData.getNumbers;
 
 /**
