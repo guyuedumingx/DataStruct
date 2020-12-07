@@ -1,6 +1,5 @@
 package week_10.dqy;
 
-
 import util.dqy.QyTree;
 
 public class ReverseBinaryTree {

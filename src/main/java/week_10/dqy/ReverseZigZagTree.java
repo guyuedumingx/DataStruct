@@ -1,7 +1,6 @@
 package week_10.dqy;
 
 import util.dqy.QYZigZagTree;
-import util.dqy.QyTree;
 
 public class ReverseZigZagTree {
     public static void main(String[] args) {

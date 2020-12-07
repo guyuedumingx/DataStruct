@@ -10,6 +10,8 @@ public class QyTree<T> {
         public T val;
         public Node left;
         public Node right;
+        //有时会使用到
+        public Node next;
 
         Node(T val) {
             this.val = val;
@@ -153,7 +155,7 @@ public class QyTree<T> {
             while (root != null) {
                 stk.push(root);
                 root = root.left;
-            }   
+            }
             //回溯
             root = stk.getTop();
             stk.pop();
@@ -194,6 +196,7 @@ public class QyTree<T> {
 
     //后序遍历+中序遍历构造二叉树
     Map<Integer, Integer> idMap;
+
     //通过递归建树
     public QyTree.Node pBuilder(int[] inorder, int[] postorder, int il, int ir, int pl, int pr) {
         //跳出条件
@@ -279,5 +282,57 @@ public class QyTree<T> {
             }
         }
         return depth;
+    }
+
+    //把一课不对称的二叉树转换为一棵对称的二叉树
+    public void turnBalanced() {
+        QyQueue<Node> q = new QyQueue<>();
+        q.push(this.root);
+        while (!q.isEmpty()) {
+            Node cur = q.getFront();
+            q.pop();
+            //左为空，右不为空，补左边
+            if (cur.left == null && cur.right != null) {
+                cur.right = new Node(cur.left.val);
+                q.push(cur.right);
+            }
+            //右为空，左不为空，补右边
+            if (cur.left != null && cur.right == null) {
+                cur.left = new Node(cur.right.val);
+                q.push(cur.left);
+            }
+            //左右都不为空则继续向下查
+            if (cur.left != null && cur.right != null) {
+                q.push(cur.right);
+                q.push(cur.left);
+            }
+        }
+    }
+
+    //把叶子节点连接起来
+    public Node connectLeaf() {
+        QyQueue<Node> q = new QyQueue<Node>();
+        QyQueue<Node> leaves = new QyQueue<Node>();
+        q.push(this.root);
+        //层序遍历找叶子节点
+        while (!q.isEmpty()) {
+            Node cur = q.getFront();
+            q.pop();
+            if(cur.left == null && cur.right == null) leaves.push(cur);
+            else if (cur.left != null) q.push(cur.left);
+            else if (cur.right != null) q.push(cur.right);
+        }
+        //第一个叶子节点
+        Node first = q.getFront();
+        //存储上一个节点
+        Node f = first;
+        //连接
+        while (!q.isEmpty()) {
+            Node cur = leaves.getFront();
+            leaves.pop();
+            f.next = cur;
+            cur = f;
+        }
+        return first;
     }
 }
