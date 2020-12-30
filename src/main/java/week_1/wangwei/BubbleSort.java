@@ -5,6 +5,8 @@ import java.io.FileNotFoundException;
 import java.util.Arrays;
 import java.util.Scanner;
 
+import static util.ReadData.*;
+
 
 /**
  * 该类用于比较冒泡排序和快速排序
@@ -13,8 +15,8 @@ import java.util.Scanner;
 public class BubbleSort {
     public static void main(String[] args) throws FileNotFoundException {
 
-        int[] arr1 = new BubbleSort().getNumbers(10000);
-        int[] arr2 = new BubbleSort().getNumbers(10000);
+        int[] arr1 = getNumbersFromZero(10000);
+        int[] arr2 = getNumbersFromZero(10000);
         long time1 = sort(arr1);
         long time2 = quick(arr2);
         System.out.println("-------- Bubble Sort --------");
@@ -38,28 +40,6 @@ public class BubbleSort {
         return end - start;
     }
 
-    /**
-     * 从datafile.txt文件中获取需要排序的数字，datafile.txt文件在resources文件夹下
-     * @param number 需要从文件中读取的数字数量
-     * @return 返回读取的int[]数组
-     * @throws FileNotFoundException 找不到datafile.txt文件
-     */
-    public int[] getNumbers(int number) throws FileNotFoundException {
-        String path = this.getClass().getClassLoader().getResource("datafile.txt").getPath();
-
-        Scanner in = new Scanner(new File(path));
-        String str = in.next();
-        //把datafile.txt中的数字按，分割成String 数组
-        String[] split = str.split(",");
-
-        int[] nums = new int[number];
-
-        //读取前number位数字
-        for(int i=0; i<number;i++) {
-            nums[i] = Integer.valueOf(split[i]);
-        }
-        return nums;
-    }
 
     /**
      * 调用Arrays中的sort()函数进行快速排序
