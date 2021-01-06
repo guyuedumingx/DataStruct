@@ -4,6 +4,10 @@ package exam.wangwei;
 import util.wangwei.MyLink;
 import util.wangwei.Node;
 
+/**
+ * 2016l-2017第二学期寒冬试题最后一题解法
+ * @author yohoyes
+ */
 public class Last {
     public static void main(String[] args) {
         MyLink<Integer> link = new MyLink<>();

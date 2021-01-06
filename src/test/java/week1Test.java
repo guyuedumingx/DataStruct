@@ -1,5 +1,6 @@
 
 import org.junit.Test;
+import util.ReadData;
 import week_1.wangwei.BubbleSort;
 
 import java.io.FileNotFoundException;
@@ -7,7 +8,7 @@ import java.io.FileNotFoundException;
 public class week1Test {
     @Test
     public void FileTest() throws FileNotFoundException {
-        int[] nums = new BubbleSort().getNumbers(100);
+        int[] nums = ReadData.getNumbersFromZero(100);
     }
     @Test
     public void test(){

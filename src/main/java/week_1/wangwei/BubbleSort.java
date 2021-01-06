@@ -1,9 +1,7 @@
 package week_1.wangwei;
 
-import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Arrays;
-import java.util.Scanner;
 
 import static util.ReadData.*;
 
@@ -36,6 +34,24 @@ public class BubbleSort {
                }
            }
        }
+        long end = System.nanoTime();
+        return end - start;
+    }
+
+    /**
+     * 课本模板
+     */
+    public static long template(int[] arr) {
+        long start = System.nanoTime();
+        for(int i=1; i<arr.length; i++) {
+            for(int n=0; n<arr.length-i; n++) {
+                if(arr[n] > arr[n+1]) {
+                    int temp = arr[n+1];
+                    arr[n+1] = arr[n];
+                    arr[n] = temp;
+                }
+            }
+        }
         long end = System.nanoTime();
         return end - start;
     }
