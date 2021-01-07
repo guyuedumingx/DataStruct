@@ -4,6 +4,9 @@ import util.wangwei.MyLink;
 import util.wangwei.Node;
 
 /**
+ * 按自然顺序排序的链表
+ * 转换成
+ * 奇数倒序在前，偶数顺序在后
  * @author yohoyes
  */
 public class OddEvenLink {

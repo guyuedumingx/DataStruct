@@ -12,8 +12,7 @@ public class CountBranch {
 
     public static void main(String[] args) {
         util.wangwei.TreeNode root = BuildTree.build(7);
-        SearchTree searchTree = new SearchTree();
-        searchTree.preSearch(root);
+        SearchTree.preSearch(root);
     }
 
     private static int count(TreeNode node){

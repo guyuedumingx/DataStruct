@@ -6,7 +6,7 @@ import util.wangwei.Node;
 /**
  * 约瑟夫问题
  * n 个人围成一圈，从第一个人开始报数,
- * 数到 m 的人出列，再由下一个人重新从 11 开始报数，
+ * 数到 m 的人出列，再由下一个人重新从 1 开始报数，
  * 数到 m 的人再出圈，依次类推，直到所有的人都出圈，
  * 请输出依次出圈人的编号。
  * @author hoyoyes
@@ -36,14 +36,17 @@ public class Joseph {
      */
     public static void normal(){
         Node<Integer> cur = link.head;
+        //只要还有人，就一直循环
         while(link.head.next!=link.head){
             for (int i=1; i < distant; i++){
+                //跳过头结点
                 if(cur.next==link.head){
                     cur = cur.next.next;
                 }else {
                     cur = cur.next;
                 }
             }
+            //跳过删除头结点
             if(cur.next==link.head){
                 cur = cur.next;
                 cur.next = cur.next.next;
@@ -54,6 +57,4 @@ public class Joseph {
             link.prt();
         }
     }
-
-
 }

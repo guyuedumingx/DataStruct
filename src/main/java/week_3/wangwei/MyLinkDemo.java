@@ -13,7 +13,8 @@ public class MyLinkDemo {
         myLink.add(20);
         myLink.add(10);
         myLink.addLast(50);
-        myLink.addLast(80);
+        myLink.addLast(90);
+        myLink.addLast(500);
         myLink.distantIterator();
     }
 }
@@ -94,7 +95,11 @@ class MyLink<T> {
         Node<T> root = head.next;
         while (root!=null) {
             System.out.println(root.data);
-            root = root.next.next;
+            root = root.next;
+            if(root==null){
+                return;
+            }
+            root = root.next;
         }
     }
 }

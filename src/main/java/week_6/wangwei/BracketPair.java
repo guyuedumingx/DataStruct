@@ -7,6 +7,9 @@ import java.util.Map;
 
 /**
  * 括号匹配
+ * 左括号压栈，右括号出栈和栈顶左括号匹配
+ * 如果不匹配则说明匹配失败
+ * 如果最后栈为空，说明匹配成功，否则失败
  * @author yohoyes
  */
 public class BracketPair {

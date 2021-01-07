@@ -5,7 +5,8 @@ import util.wangwei.MyLink;
 import util.wangwei.Node;
 
 /**
- * 2016l-2017第二学期寒冬试题最后一题解法
+ * 2016-2017
+ * 第二学期寒冬试题最后一题解法
  * @author yohoyes
  */
 public class Last {

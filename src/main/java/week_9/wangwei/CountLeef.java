@@ -12,8 +12,7 @@ public class CountLeef {
 
     public static void main(String[] args) {
         TreeNode root = BuildTree.build(7);
-        SearchTree searchTree = new SearchTree();
-        searchTree.preSearch(root);
+        SearchTree.preSearch(root);
     }
 
     private static int count(TreeNode node){

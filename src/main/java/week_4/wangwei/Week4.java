@@ -111,16 +111,13 @@ public class Week4 {
      * 删除所有的a节点
      */
     public static void deleteAllA() {
-        if (link.head.next == null) {
-            return;
-        }
         Node<Character> p = link.head;
         while (p.next != null) {
-            if (p.next.data != 'a') {
+            if (p.next.data == 'a') {
+                p.next = p.next.next;
+            }else {
                 p = p.next;
-                continue;
             }
-            p.next = p.next.next;
         }
     }
 
@@ -135,20 +132,18 @@ public class Week4 {
         while (p.next != null) {
             if (p.next.data != 'a') {
                 p = p.next;
-                continue;
+            }else {
+                p.data = p.next.data;
+                p.next = p.next.next;
             }
-            p.data = p.next.data;
-            p.next = p.next.next;
         }
     }
+
 
     /**
      * 删除a节点后的节点
      */
     public static void delNodeAfterA() {
-        if (link.head.next == null) {
-            return;
-        }
         Node<Character> p = link.head.next;
         while (p != null) {
             if (p.data == 'a' && p.next != null) {
